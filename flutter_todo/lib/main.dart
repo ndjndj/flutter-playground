@@ -31,10 +31,29 @@ class TodoListPage extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
-          Text('Todo1'),
-          Text('Todo2'),
-          Text('Todo3'),
-          Text('Todo4'),
+          Card(
+            child: ListTile(
+              title: Text('Todo1')
+            ),
+          ),
+
+          Card(
+            child: ListTile(
+              title: Text('Todo2')
+            ),
+          ),
+
+          Card(
+            child: ListTile(
+              title: Text('Todo3')
+            ),
+          ),
+
+          Card(
+            child: ListTile(
+              title: Text('Todo4')
+            ),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
