@@ -6,8 +6,6 @@ void main() {
 }
 
 class MyTodoApp extends StatelessWidget {
-  const MyTodoApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,12 +23,11 @@ class MyTodoApp extends StatelessWidget {
 
 // リスト一覧画面用Widget
 class TodoListPage extends StatelessWidget {
-  const TodoListPage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text('lists')
+        child: Text('リスト一覧画面'),
       ),
     );
   }
