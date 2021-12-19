@@ -53,7 +53,7 @@ class _TodoListPageState extends State<TodoListPage> {
             })
           );
           if (newListText != null) {
-
+            todoList.add(newListText);
           }
         },
         child: Icon(Icons.add)
