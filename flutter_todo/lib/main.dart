@@ -28,38 +28,22 @@ class TodoListPage extends StatefulWidget {
 // リスト一覧画面用Widget
 class _TodoListPageState extends State<TodoListPage> {
   List<String> todoList = [];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('リスト一覧'),
       ),
-      body: ListView(
-        children: <Widget>[
-          Card(
+      body: ListView.builder(
+        itemCount: todoList.length,
+        itemBuilder: (context, index) {
+          return Card(
             child: ListTile(
-              title: Text('Todo1')
-            ),
-          ),
-
-          Card(
-            child: ListTile(
-              title: Text('Todo2')
-            ),
-          ),
-
-          Card(
-            child: ListTile(
-              title: Text('Todo3')
-            ),
-          ),
-
-          Card(
-            child: ListTile(
-              title: Text('Todo4')
-            ),
-          ),
-        ],
+              title: Text(todoList[index])
+            )
+          );
+        },
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
