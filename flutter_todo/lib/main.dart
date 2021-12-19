@@ -70,7 +70,13 @@ class TodoListPage extends StatelessWidget {
   }
 }
 
-class TodoAddPage extends StatelessWidget {
+class TodoAddPage extends StatefulWidget {
+  @override
+  _TodoAddPageState createState() => _TodoAddPageState();
+}
+class _TodoAddPageState extends State<TodoAddPage> {
+  String _text = '';
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
