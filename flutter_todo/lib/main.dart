@@ -115,7 +115,7 @@ class _TodoAddPageState extends State<TodoAddPage> {
               width: double.infinity,
               child: TextButton(
                 onPressed: () {
-                  Navigator.of(context).pop();
+                  Navigator.of(context).pop(_text);
                 },
                 child: Text('Cancel')
               )
