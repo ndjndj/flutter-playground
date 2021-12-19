@@ -32,3 +32,19 @@ class TodoListPage extends StatelessWidget {
     );
   }
 }
+
+class TodoAddPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: TextButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          child: Text('back to top'),
+        ),
+      ),
+    );
+  }
+}
