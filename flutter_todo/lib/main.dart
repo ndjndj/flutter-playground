@@ -21,8 +21,13 @@ class MyTodoApp extends StatelessWidget {
   }
 }
 
+class TodoListPage extends StatefulWidget {
+  @override
+  _TodoListPageState createState() => _TodoListPageState();
+}
 // リスト一覧画面用Widget
-class TodoListPage extends StatelessWidget {
+class _TodoListPageState extends State<TodoListPage> {
+  List<String> todoList = [];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,7 +69,7 @@ class TodoListPage extends StatelessWidget {
             })
           );
           if (newListText != null) {
-            
+
           }
         },
         child: Icon(Icons.add)
