@@ -76,7 +76,7 @@ class TodoAddPage extends StatefulWidget {
 }
 class _TodoAddPageState extends State<TodoAddPage> {
   String _text = '';
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -88,8 +88,18 @@ class _TodoAddPageState extends State<TodoAddPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            TextField(),
+            Text(_text, style: TextStyle(color: Colors.blue)),
             const SizedBox(height: 8),
+            TextField(
+              onChanged: (String value) {
+                setState(
+                  () {
+                    _text = value;
+                  }
+                );
+              }
+            ),
+
             Container(
               width: double.infinity,
               child: ElevatedButton(
