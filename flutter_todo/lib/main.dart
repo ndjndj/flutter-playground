@@ -29,6 +29,15 @@ class TodoListPage extends StatelessWidget {
       body: Center(
         child: Text('リスト一覧画面'),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) {
+              return TodoAddPage();
+            })
+          );
+        },
+      ),
     );
   }
 }
