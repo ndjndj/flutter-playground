@@ -57,12 +57,15 @@ class TodoListPage extends StatelessWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.of(context).push(
+        onPressed: () async {
+          final newListText = await Navigator.of(context).push(
             MaterialPageRoute(builder: (context) {
               return TodoAddPage();
             })
           );
+          if (newListText != null) {
+            
+          }
         },
         child: Icon(Icons.add)
       ),
