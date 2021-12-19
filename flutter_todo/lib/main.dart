@@ -98,7 +98,9 @@ class _TodoAddPageState extends State<TodoAddPage> {
                 style: ElevatedButton.styleFrom(
                   primary: Colors.blue,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pop(_text);
+                },
                 child: Text('リスト追加', style: TextStyle(color: Colors.white))
               )
             ),
@@ -107,7 +109,7 @@ class _TodoAddPageState extends State<TodoAddPage> {
               width: double.infinity,
               child: TextButton(
                 onPressed: () {
-                  Navigator.of(context).pop(_text);
+                  Navigator.of(context).pop();
                 },
                 child: Text('Cancel')
               )
