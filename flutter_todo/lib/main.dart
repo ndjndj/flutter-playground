@@ -87,7 +87,9 @@ class TodoAddPage extends StatelessWidget {
             Container(
               width: double.infinity,
               child: ElevatedButton(
-                color: Colors.blue,
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.blue,
+                ),
                 onPressed: () {},
                 child: Text('リスト追加', style: TextStyle(color: Colors.white))
               )
