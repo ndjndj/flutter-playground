@@ -83,7 +83,7 @@ class TodoAddPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             TextField(),
-            const SizeBox(height: 8),
+            const SizedBox(height: 8),
             Container(
               width: double.infinity,
               child: ElevatedButton(
@@ -92,7 +92,7 @@ class TodoAddPage extends StatelessWidget {
                 child: Text('リスト追加', style: TextStyle(color: Colors.white))
               )
             ),
-            const SizeBox(height: 8),
+            const SizedBox(height: 8),
             Container(
               width: double.infinity,
               child: TextButton(
