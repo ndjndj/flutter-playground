@@ -42,7 +42,7 @@ class _TopState extends State<Top> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {}/*() async {
+        onPressed: () async {
           final newText = await Navigator.of(context).push(
             MaterialPageRoute(builder: (context) {
               return AddMapicPage();
@@ -50,10 +50,10 @@ class _TopState extends State<Top> {
           );
           if (newText != null) {
             setState(() {
-              addressList.add(newText)
+              addressList.add(newText);
             });
           }
-        }*/,
+        },
         child: Icon(Icons.add)
       ),
     );
