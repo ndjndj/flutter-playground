@@ -65,3 +65,11 @@ class AddMapicPage extends StatefulWidget {
   _AddMapicPageState createState() => _AddMapicPageState();
 }
 
+class _AddMapicPageState extends State<AddMapicPage> {
+  String _text = '';
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
+  }
+}
