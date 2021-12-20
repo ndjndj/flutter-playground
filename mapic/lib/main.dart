@@ -24,7 +24,7 @@ class Top extends StatefulWidget {
 
 class _TopState extends State<Top> {
   List<String> addressList = [];
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,6 +40,21 @@ class _TopState extends State<Top> {
             )
           );
         },
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () async {
+          final newText = await Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) {
+              return AddMapicPage();
+            })
+          );
+          if (newText != null) {
+            setState(() {
+              addressList.add(newText)
+            });
+          }
+        },
+        child: Icon(Icons.add)
       ),
     );
   }
