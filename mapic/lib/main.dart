@@ -75,7 +75,7 @@ class _AddMapicPageState extends State<AddMapicPage> {
         title: Text('AddMapic')
       ),
       body: Container(
-        padding: EdgeInsets(64),
+        padding: EdgeInsets.all(64),
         child: Column(
           children: <Widget>[
             TextField(
