@@ -59,3 +59,9 @@ class _TopState extends State<Top> {
     );
   }
 }
+
+class AddMapicPage extends StatefulWidget {
+  @override
+  _AddMapicPageState createState() => _AddMapicPageState();
+}
+
