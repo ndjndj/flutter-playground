@@ -70,6 +70,20 @@ class _AddMapicPageState extends State<AddMapicPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('AddMapic')
+      ),
+      body: Container(
+        padding: EdgeInsets(64),
+        child: Column(
+          children: <Widget>[
+            TextField(
+              onChanged: (String value) {setState(() {_text = value;});}
+            )
+          ]
+        ),
+      ),
+    );
   }
 }
