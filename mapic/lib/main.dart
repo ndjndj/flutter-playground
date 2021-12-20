@@ -21,3 +21,26 @@ class Top extends StatefulWidget {
   @override
   _TopState createState() => _TopState();
 }
+
+class _TopState extends State<Top> {
+  List<String> addressList = [];
+  
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Mapic'),
+      ),
+      body: ListView.builder(
+        itemCount: addressList.length,
+        itemBuilder: (context, index) {
+          return Card(
+            child: ListTile(
+              title: Text(addressList[index])
+            )
+          );
+        },
+      ),
+    );
+  }
+}
