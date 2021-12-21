@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'dart:io';
 import 'package:image_picker/image_picker.dart';
 void main() {
@@ -73,16 +74,21 @@ class _AddMapicPageState extends State<AddMapicPage> {
   final picker = ImagePicker();
 
   Future getImage() async {
-    final pickedFile = await picker.pickImage(source: ImageSource.camera);
+    try {
+      final pickedFile = await picker.pickImage(source: ImageSource.camera);
 
-    if (pickedFile == null) return;
+      if (pickedFile == null) return;
 
-    final imageTmp = File(pickedFile.path);
+      final imageTmp = File(pickedFile.path);
 
 
-    setState(() {
-      this._image = imageTmp;
-    });
+      setState(() {
+        this._image = imageTmp;
+      });
+    } on PlatformException catch(e) {
+      print('failed to pick image $e');
+    }
+
   }
 
 
