@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
 void main() {
   runApp(Mapic());
@@ -61,6 +62,8 @@ class _TopState extends State<Top> {
 }
 
 class AddMapicPage extends StatefulWidget {
+  File _image;
+  final picker = ImagePicker();
   @override
   _AddMapicPageState createState() => _AddMapicPageState();
 }
