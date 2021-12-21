@@ -109,7 +109,7 @@ class _AddMapicPageState extends State<AddMapicPage> {
                   height: 160,
                   fit: BoxFit.cover,
                 )
-              : FlutterLogo(),
+              : FlutterLogo(size: 160),
             SizedBox(height: 30),
             TextField(
               onChanged: (String value) {setState(() {_text = value;});}
