@@ -73,11 +73,16 @@ class _AddMapicPageState extends State<AddMapicPage> {
   final picker = ImagePicker();
 
   Future getImage() async {
-    final pickedFile = await picker.getImage(source: ImageSource.camera);
+    final pickedFile = await picker.pickImage(source: ImageSource.camera);
+
+    if (pickedFile == null) return;
+
+    final imageTmp = File(pickedFile.path);
+    this._image = imageTmp;
 
     setState(() {
       if (pickedFile != null) {
-        _image = File(pickedFile.path);
+
       } else {
         print('No Image selected.');
       }
