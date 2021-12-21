@@ -69,6 +69,7 @@ class AddMapicPage extends StatefulWidget {
 class _AddMapicPageState extends State<AddMapicPage> {
   String _text = '';
   File _image;
+
   final picker = ImagePicker();
 
   Future getImage() async {
