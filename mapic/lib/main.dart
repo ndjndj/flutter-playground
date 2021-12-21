@@ -71,6 +71,18 @@ class _AddMapicPageState extends State<AddMapicPage> {
   File _image;
   final picker = ImagePicker();
 
+  Future getImage() async {
+    final pickedFile = await picker.getImage(source: ImageSource.camera);
+
+    setState(() {
+      if (pickedFile != null) {
+        _image = File(pickedFile.path);
+      } else {
+        print('No Image selected.');
+      }
+    });
+  }
+
 
   @override
   Widget build(BuildContext context) {
