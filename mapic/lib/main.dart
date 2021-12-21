@@ -85,7 +85,8 @@ class _AddMapicPageState extends State<AddMapicPage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.add_a_photo),
+        onPressed: () {},
+        child: Icon(Icons.add_a_photo),
       ),
     );
   }
