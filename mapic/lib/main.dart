@@ -80,9 +80,12 @@ class _AddMapicPageState extends State<AddMapicPage> {
           children: <Widget>[
             TextField(
               onChanged: (String value) {setState(() {_text = value;});}
-            )
+            ),
           ]
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.add_a_photo),
       ),
     );
   }
