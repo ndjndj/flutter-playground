@@ -95,6 +95,8 @@ class _AddMapicPageState extends State<AddMapicPage> {
         padding: EdgeInsets.all(64),
         child: Column(
           children: <Widget>[
+            _image == null ? Text('No') : Image.file(_image),
+            SizedBox(height: 30),
             TextField(
               onChanged: (String value) {setState(() {_text = value;});}
             ),
