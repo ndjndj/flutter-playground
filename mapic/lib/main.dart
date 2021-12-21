@@ -102,7 +102,14 @@ class _AddMapicPageState extends State<AddMapicPage> {
         padding: EdgeInsets.all(64),
         child: Column(
           children: <Widget>[
-            _image != null ? Image.file(_image!) : FlutterLogo(),
+            _image != null
+              ? Image.file(
+                  _image!,
+                  width: 160,
+                  height: 160,
+                  fit: BoxFit.cover,
+                )
+              : FlutterLogo(),
             SizedBox(height: 30),
             TextField(
               onChanged: (String value) {setState(() {_text = value;});}
