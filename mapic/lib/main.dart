@@ -78,14 +78,10 @@ class _AddMapicPageState extends State<AddMapicPage> {
     if (pickedFile == null) return;
 
     final imageTmp = File(pickedFile.path);
-    this._image = imageTmp;
+
 
     setState(() {
-      if (pickedFile != null) {
-
-      } else {
-        print('No Image selected.');
-      }
+      this._image = imageTmp;
     });
   }
 
