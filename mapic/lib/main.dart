@@ -115,9 +115,11 @@ class _AddMapicPageState extends State<AddMapicPage> {
                   child: Card(
                     child: InkWell(
                       onTap: getImage,
-                      child: Padding(
-                        padding: EdgeInsets.all(20.0),
-                        child: Text('Card', style: TextStyle(fontSize: 28))
+                      child:Column(
+                        children: <Widget>[
+                          Icon(Icons.add_a_photo),
+                          Text('add a photo'),
+                        ],
                       ),
                     ),
                   ),
