@@ -109,7 +109,15 @@ class _AddMapicPageState extends State<AddMapicPage> {
                   height: 160,
                   fit: BoxFit.cover,
                 )
-              : FlutterLogo(size: 160),
+              : Card(
+                  child: InkWell(
+                    onTap: () {},
+                    child: Padding(
+                      padding: EdgeInsets.all(20.0),
+                      child: Text('Card', style: TextStyle(fontSize: 28))
+                    ),
+                  ),
+                ),
             SizedBox(height: 30),
             TextField(
               onChanged: (String value) {setState(() {_text = value;});}
