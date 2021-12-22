@@ -109,12 +109,16 @@ class _AddMapicPageState extends State<AddMapicPage> {
                   height: 160,
                   fit: BoxFit.cover,
                 )
-              : Card(
-                  child: InkWell(
-                    onTap: () {},
-                    child: Padding(
-                      padding: EdgeInsets.all(20.0),
-                      child: Text('Card', style: TextStyle(fontSize: 28))
+              : Container(
+                  width: 160,
+                  height: 160,
+                  child: Card(
+                    child: InkWell(
+                      onTap: getImage,
+                      child: Padding(
+                        padding: EdgeInsets.all(20.0),
+                        child: Text('Card', style: TextStyle(fontSize: 28))
+                      ),
                     ),
                   ),
                 ),
