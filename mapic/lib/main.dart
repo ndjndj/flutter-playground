@@ -116,8 +116,9 @@ class _AddMapicPageState extends State<AddMapicPage> {
                     child: InkWell(
                       onTap: getImage,
                       child:Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
-                          Icon(Icons.add_a_photo),
+                          Icon(Icons.add_a_photo, size: 36),
                           Text('add a photo'),
                         ],
                       ),
