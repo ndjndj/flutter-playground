@@ -131,7 +131,7 @@ class _AddMapicPageState extends State<AddMapicPage> {
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: Colors.blue
+                primary: Colors.teal
               ),
               onPressed: () {},
               child: Text('save', style: TextStyle(color: Colors.white))
