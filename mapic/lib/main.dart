@@ -129,6 +129,13 @@ class _AddMapicPageState extends State<AddMapicPage> {
             TextField(
               onChanged: (String value) {setState(() {_text = value;});}
             ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.blue
+              ),
+              onPressed: () {},
+              child: Text('save', style: TextStyle(color: Colors.white))
+            ),
           ]
         ),
       ),
