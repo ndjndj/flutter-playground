@@ -10,3 +10,17 @@ class CreateUser extends StatefulWidget {
   @override
   _CreateUser createState() => _CreateUser();
 }
+
+class _CreateUser extends State<CreateUser> {
+  bool isLogin = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Login'),
+      ),
+      
+    );
+  }
+}
