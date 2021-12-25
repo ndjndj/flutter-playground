@@ -129,6 +129,7 @@ class _AddMapicPageState extends State<AddMapicPage> {
             TextField(
               onChanged: (String value) {setState(() {_text = value;});}
             ),
+            SizedBox(height: 30),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 primary: Colors.teal
