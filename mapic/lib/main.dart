@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:io';
 import 'package:image_picker/image_picker.dart';
+import './create-user.dart';
 void main() {
-  runApp(Mapic());
+  runApp(CreateUser());
 }
 
 class Mapic extends StatelessWidget {
