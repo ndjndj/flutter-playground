@@ -4,7 +4,12 @@ import 'dart:io';
 import 'package:image_picker/image_picker.dart';
 import './create-user.dart';
 void main() {
-  runApp(CreateUser());
+
+  runApp(
+    new MaterialApp(
+      home:Sample()
+    )
+  );
 }
 
 class Mapic extends StatelessWidget {

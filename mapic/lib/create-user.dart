@@ -2,17 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:io';
 
-void main() {
-  runApp(CreateUser());
+class Sample extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('text')),
+      body: Center(child: Text('text'))
+    );
+  }
 }
-
 class CreateUser extends StatefulWidget {
   @override
   _CreateUser createState() => _CreateUser();
 }
 
 class _CreateUser extends State<CreateUser> {
-  bool isLogin = false;
+  //bool isLogin = false;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +25,7 @@ class _CreateUser extends State<CreateUser> {
       appBar: AppBar(
         title: Text('Login'),
       ),
-      
+      body: Center(child: Text('create user')),
     );
   }
 }
