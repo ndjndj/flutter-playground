@@ -7,7 +7,7 @@ void main() {
 
   runApp(
     new MaterialApp(
-      home:Sample()
+      home: CreateUser()
     )
   );
 }

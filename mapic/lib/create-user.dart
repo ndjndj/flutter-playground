@@ -2,15 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:io';
 
-class Sample extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('text')),
-      body: Center(child: Text('text'))
-    );
-  }
-}
 class CreateUser extends StatefulWidget {
   @override
   _CreateUser createState() => _CreateUser();
