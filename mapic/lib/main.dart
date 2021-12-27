@@ -54,7 +54,7 @@ class _TopState extends State<Top> {
         icon: Icon(Icons.miscellaneous_services),
         label: 'config'
       ),
-    ]
+    ];
   }
 
   @override
