@@ -73,6 +73,13 @@ class _TopState extends State<Top> {
           );
         },
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _screenIndex,
+        onTap: (index) {
+          setState(() {_screenIndex = index;});
+        },
+        items: bottomNavBar()
+      ),
     );
   }
 }
