@@ -32,6 +32,13 @@ class Top extends StatefulWidget {
 
 class _TopState extends State<Top> {
   List<String> addressList = [];
+  int _screenIndex = 0;
+
+  static List<Widget> _pageList = [
+    CreateUser(),
+    AddMapicPage(),
+    Top()
+  ];
 
   @override
   Widget build(BuildContext context) {
