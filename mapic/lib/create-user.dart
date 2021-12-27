@@ -8,8 +8,7 @@ class CreateUser extends StatefulWidget {
 }
 
 class _CreateUser extends State<CreateUser> {
-  //bool isLogin = false;
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
