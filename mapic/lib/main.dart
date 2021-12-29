@@ -37,9 +37,9 @@ class _TopState extends State<Top> {
   int _screenIndex = 0;
 
   static List<Widget> _pageList = [
-    CreateUser(),
+    MapicList(),
     AddMapic(),
-    MapicList()
+    CreateUser(),
   ];
 
   List<BottomNavigationBarItem> bottomNavBar() {
