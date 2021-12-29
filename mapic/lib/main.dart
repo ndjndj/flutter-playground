@@ -61,19 +61,7 @@ class _TopState extends State<Top> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Mapic'),
-      ),
-      body: ListView.builder(
-        itemCount: addressList.length,
-        itemBuilder: (context, index) {
-          return Card(
-            child: ListTile(
-              title: Text(addressList[index])
-            )
-          );
-        },
-      ),
+      body: _pageList[_screenIndex],
 
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _screenIndex,
