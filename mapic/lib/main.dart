@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:image_picker/image_picker.dart';
 import './pages/create-user.dart';
 import './pages/add-mapic.dart';
+import './pages/mapic-list.dart';
 void main() {
 
   runApp(
@@ -38,7 +39,7 @@ class _TopState extends State<Top> {
   static List<Widget> _pageList = [
     CreateUser(),
     AddMapic(),
-    Top()
+    MapicList()
   ];
 
   List<BottomNavigationBarItem> bottomNavBar() {
