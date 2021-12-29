@@ -43,12 +43,12 @@ class _TopState extends State<Top> {
   List<BottomNavigationBarItem> bottomNavBar() {
     return [
       BottomNavigationBarItem(
-        icon: Icon(Icons.add_circle_outline),
-        label: 'Add',
-      ),
-      BottomNavigationBarItem(
         icon: Icon(Icons.list),
         label: 'list'
+      ),
+      BottomNavigationBarItem(
+        icon: Icon(Icons.add_circle_outline),
+        label: 'Add',
       ),
       BottomNavigationBarItem(
         icon: Icon(Icons.miscellaneous_services),
