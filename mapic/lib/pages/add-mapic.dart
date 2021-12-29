@@ -3,12 +3,12 @@ import 'package:flutter/services.dart';
 import 'dart:io';
 import 'package:image_picker/image_picker.dart';
 
-class AddMapicPage extends StatefulWidget {
+class AddMapic extends StatefulWidget {
   @override
-  _AddMapicPageState createState() => _AddMapicPageState();
+  _AddMapic createState() => _AddMapic();
 }
 
-class _AddMapicPageState extends State<AddMapicPage> {
+class _AddMapic extends State<AddMapic> {
   String _text = '';
   File? _image;
 
