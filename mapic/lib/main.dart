@@ -63,7 +63,7 @@ class _TopState extends State<Top> {
       appBar: AppBar(
         title: Text('Mapic'),
       ),
-      body: ListView.builder(
+      body: _pageList[_screenIndex],/*ListView.builder(
         itemCount: addressList.length,
         itemBuilder: (context, index) {
           return Card(
@@ -72,7 +72,8 @@ class _TopState extends State<Top> {
             )
           );
         },
-      ),
+      ),*/
+
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _screenIndex,
         onTap: (index) {
