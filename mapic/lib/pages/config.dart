@@ -11,19 +11,27 @@ class _ConfigState extends State<Config> {
   List<Map<String, dynamic>> _configList = [
     {
       'name': 'public setting',
-      'current': true,
+      'current': 'myself',
+      'type': 'radio',
+      'items': ['myself', 'friedns', 'community', 'other']
     },
     {
       'name': 'theme',
-      'current': true,
+      'current': 'null',
+      'type': 'transition',
+      'items': '.dart'
     },
     {
       'name': 'initial view',
-      'current': true,
+      'current': 'config',
+      'type': 'select',
+      'items': ['Add', 'List']
     },
     {
       'name': 'logout',
-      'current': true,
+      'current': 'null',
+      'type': 'do',
+      'items': 'null'
     },
   ];
 
