@@ -8,10 +8,28 @@ class Config extends StatefulWidget {
 }
 
 class _ConfigState extends State<Config> {
-  List<String> _configList = [
-    'public setting',
-
+  List<Map<String, Object>> _configList = [
+    {
+      'name': 'public setting',
+      'current': true,
+    },
+    {
+      'name': 'theme',
+      'current': true,
+    },
+    {
+      'name': 'initial view',
+      'current': true,
+    },
+    {
+      'name': 'logout',
+      'current': true,
+    },
   ];
+
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
