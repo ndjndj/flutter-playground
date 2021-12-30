@@ -10,7 +10,7 @@ class Config extends StatefulWidget {
 class _ConfigState extends State<Config> {
   List<String> _configList = [
     'public setting',
-    
+
   ];
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class _ConfigState extends State<Config> {
             child: ListTile(
               title: Text(_configList[index])
             )
-          )
+          );
         }
       )
     );
