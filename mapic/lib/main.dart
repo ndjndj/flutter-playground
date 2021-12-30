@@ -48,7 +48,7 @@ class _TopState extends State<Top> {
     return [
       BottomNavigationBarItem(
         icon: Icon(Icons.list),
-        label: 'list'
+        label: 'List'
       ),
       BottomNavigationBarItem(
         icon: Icon(Icons.add_circle_outline),
@@ -56,7 +56,7 @@ class _TopState extends State<Top> {
       ),
       BottomNavigationBarItem(
         icon: Icon(Icons.miscellaneous_services),
-        label: 'config'
+        label: 'Config'
       ),
     ];
   }
