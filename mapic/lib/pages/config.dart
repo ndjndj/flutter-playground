@@ -35,9 +35,6 @@ class _ConfigState extends State<Config> {
     },
   ];
 
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
