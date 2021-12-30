@@ -8,7 +8,7 @@ class Config extends StatefulWidget {
 }
 
 class _ConfigState extends State<Config> {
-  List<Map<String, Object>> _configList = [
+  List<Map<String, dynamic>> _configList = [
     {
       'name': 'public setting',
       'current': true,
@@ -41,7 +41,7 @@ class _ConfigState extends State<Config> {
         itemBuilder: (context, index) {
           return Card(
             child: ListTile(
-              title: Text(_configList[index])
+              title: Text(_configList[index]['name'])
             )
           );
         }
