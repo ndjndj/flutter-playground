@@ -1,16 +1,42 @@
 # mapic
 
-A new Flutter project.
+## community
+デフォルト設定は自分だけに公開
+フレンドに公開
+コミュニティに公開
 
-## Getting Started
+ユーザー登録時にIDを与える
+ID
+nickname
+password
+認証は再ログイン？
 
-This project is a starting point for a Flutter application.
+フレンド・コミュニティ
+地図起点 - 地図にピッカー
+ワード起点 - インスタLikeList
 
-A few resources to get you started if this is your first Flutter project:
+ミッションイベントとかね
+「運営」みたいなコミュニティを作っとく
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## list
+list は単なるリスト表示とマッピング表示
+コミュニティ・フレンド・自分のフィルター
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## add
+写真（カメラかライブラリ選択）
+複数枚で登録したい
+位置情報（入力式か、自動取得、地図選択）
+名前
+ID（自動）
+作成日（初期値は当日で編集可能）
+
+## config
+公開設定
+テーマ設定
+ログアウト
+アプリ起動時の初期画面（Add or list?etc）
+連携設定？
+
+
+
+
