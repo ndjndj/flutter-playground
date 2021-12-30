@@ -5,6 +5,8 @@ import 'package:image_picker/image_picker.dart';
 import './pages/create-user.dart';
 import './pages/add-mapic.dart';
 import './pages/mapic-list.dart';
+import './pages/config.dart';
+
 void main() {
 
   runApp(
