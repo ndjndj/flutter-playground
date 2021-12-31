@@ -50,7 +50,7 @@ class _ConfigState extends State<Config> {
             )
           );
         }
-      )
+      ),
     );
   }
 }
