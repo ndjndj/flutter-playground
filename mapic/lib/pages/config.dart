@@ -46,9 +46,14 @@ class _ConfigState extends State<Config> {
         itemCount: _configList.length,
         itemBuilder: (context, index) {
           return Card(
-            child: ListTile(
-              title: Text(_configList[index]['name'])
-            )
+            child: Column(
+              children: <Widget>[
+                ListTile(
+                  title: Text(_configList[index]['name']),
+                ),
+                Dropdown()
+              ]
+            ),
           );
         }
       ),
