@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Dropdown extends StatefulWidget {
   @override
-  _Dropdown createState() => _DropDown();
+  _Dropdown createState() => _Dropdown();
 }
 
 class _Dropdown extends State<Dropdown> {
