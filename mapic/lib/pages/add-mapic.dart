@@ -84,15 +84,17 @@ class _AddMapic extends State<AddMapic> {
                   children: <Widget>[
                     IconButton(
                       icon: Icon(Icons.map),
+                      onPressed: () {},
                     ),
                     IconButton(
                       icon: Icon(Icons.place),
+                      onPressed: () {},
                     )
                   ],
                 ),
               ),
               onChanged: (String value) {setState(() {_text = value;});}
-            ),
+            ),r
             SizedBox(height: 15),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
