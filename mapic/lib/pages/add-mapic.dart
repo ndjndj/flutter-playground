@@ -75,7 +75,6 @@ class _AddMapic extends State<AddMapic> {
               ),
               onChanged: (String value) {setState(() {_text = value;});}
             ),
-            SizedBox(height: 30),
             TextField(
               decoration: InputDecoration(
                 labelText: 'address',
@@ -84,7 +83,7 @@ class _AddMapic extends State<AddMapic> {
               ),
               onChanged: (String value) {setState(() {_text = value;});}
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 15),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 primary: Colors.teal
