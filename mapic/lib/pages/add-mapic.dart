@@ -80,6 +80,16 @@ class _AddMapic extends State<AddMapic> {
                 labelText: 'address',
                 labelStyle: TextStyle(fontSize: 12),
                 hintText: 'Arctic',
+                suffixIcon: Row(
+                  children: <Widget>[
+                    IconButton(
+                      icon: Icon(Icons.map),
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.place),
+                    )
+                  ],
+                ),
               ),
               onChanged: (String value) {setState(() {_text = value;});}
             ),
