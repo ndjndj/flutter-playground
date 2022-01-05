@@ -70,7 +70,9 @@ class _AddMapic extends State<AddMapic> {
             TextField(
               decoration: InputDecoration(
                 labelText: 'place name',
+                labelStyle: TextStyle(fontSize: 12),
                 hintText: 'lol',
+
               ),
               onChanged: (String value) {setState(() {_text = value;});}
             ),
