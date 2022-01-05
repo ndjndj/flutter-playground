@@ -72,7 +72,15 @@ class _AddMapic extends State<AddMapic> {
                 labelText: 'place name',
                 labelStyle: TextStyle(fontSize: 12),
                 hintText: 'lol',
-
+              ),
+              onChanged: (String value) {setState(() {_text = value;});}
+            ),
+            SizedBox(height: 30),
+            TextField(
+              decoration: InputDecoration(
+                labelText: 'address',
+                labelStyle: TextStyle(fontSize: 12),
+                hintText: 'Arctic',
               ),
               onChanged: (String value) {setState(() {_text = value;});}
             ),
