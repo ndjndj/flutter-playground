@@ -68,6 +68,10 @@ class _AddMapic extends State<AddMapic> {
                 ),
             SizedBox(height: 30),
             TextField(
+              decoration: InputDecoration(
+                labelText: 'place name',
+                hintText: 'lol',
+              ),
               onChanged: (String value) {setState(() {_text = value;});}
             ),
             SizedBox(height: 30),
