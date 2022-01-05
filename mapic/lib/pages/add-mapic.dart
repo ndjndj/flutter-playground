@@ -94,7 +94,7 @@ class _AddMapic extends State<AddMapic> {
                 ),
               ),
               onChanged: (String value) {setState(() {_text = value;});}
-            ),r
+            ),
             SizedBox(height: 15),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
