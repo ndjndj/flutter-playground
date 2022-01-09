@@ -82,7 +82,13 @@ class _AddMapic extends State<AddMapic> {
                 hintText: 'Arctic',
                 suffixIcon: IconButton(
                       icon: Icon(Icons.place),
-                      onPressed: () {},
+                      onPressed: () async {
+                        final address = await Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) {
+                            return Map();
+                          })
+                        )
+                      },
                   ),
               ),
               onChanged: (String value) {setState(() {_text = value;});}
