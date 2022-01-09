@@ -87,7 +87,7 @@ class _AddMapic extends State<AddMapic> {
                           MaterialPageRoute(builder: (context) {
                             return Map();
                           })
-                        )
+                        );
                       },
                   ),
               ),
