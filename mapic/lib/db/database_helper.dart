@@ -58,5 +58,10 @@ class DatabaseHelper {
     return await db.query(table);
   }
 
+  Future<int> queryRowCount() async {
+    Database db = await instance.database;
+    return Sqflite.firstIntValue(await db.rawQuery('SELECT COUNT(*) FROM $table'));
+  }
+
 
 }
