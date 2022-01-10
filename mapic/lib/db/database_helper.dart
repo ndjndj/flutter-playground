@@ -19,6 +19,7 @@ class SQLHelper {
   static Future<sql.Database> db() async {
     var directory = await getApplicationDocumentsDirectory();
     var path = join(directory.path, 'sample.db');
+    print('database place......');
     print(path);
     return sql.openDatabase(
       path,
