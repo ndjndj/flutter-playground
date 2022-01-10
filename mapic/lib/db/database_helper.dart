@@ -36,4 +36,10 @@ class SQLHelper {
     final db = await SQLHelper.db();
     return db.query('items', orderBy: 'id');
   }
+
+  static Future<List<Map<String, dynamic>>> getItem(int id) async {
+    final db = await SQLHelper.db();
+    return db.query('items', where: 'id = ?', whereArgs: [id], limit: 1);
+  }
+  
 }
