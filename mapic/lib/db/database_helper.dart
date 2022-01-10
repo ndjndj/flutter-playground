@@ -41,5 +41,17 @@ class SQLHelper {
     final db = await SQLHelper.db();
     return db.query('items', where: 'id = ?', whereArgs: [id], limit: 1);
   }
-  
+
+  static Future<int> updateItem(int id, String title, String? description) async {
+    final db = await SQLHelper.db();
+
+    final data = {
+      'title': title,
+      'descriptopn': description,
+      'createdAt': DateTime.now().toString()
+    };
+
+    final result = await db.update('items', data, where: 'id = ?', whereArgs: [id]);
+    return result;
+  }
 }
