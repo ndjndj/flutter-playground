@@ -1,4 +1,6 @@
 import 'package:flutter/foundation.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart' as sql;
 
 class SQLHelper {
@@ -15,8 +17,10 @@ class SQLHelper {
   }
 
   static Future<sql.Database> db() async {
+    var directory = await getApplicationDocumentsDirectory();
+    var path = join(directory.path, 'sample.db');
     return sql.openDatabase(
-      'sample.db',
+      path,
       version: 1,
       onCreate: (sql.Database database, int version) async {
         await createTables(database);
