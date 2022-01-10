@@ -24,5 +24,13 @@ class SQLHelper {
     );
   }
 
+  static Future<int> createItem(String title, String? description) async {
+    final db = await SQLHelper.db();
+
+    final data = {'title': title, 'description': description};
+    final id = await db.insert('items', data, conflictAlgorithm: sql.ConflictAlgorithm.replace);
+    return id;
+  }
+
   
 }
