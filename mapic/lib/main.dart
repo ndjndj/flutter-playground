@@ -6,12 +6,13 @@ import './pages/create-user.dart';
 import './pages/add-mapic.dart';
 import './pages/mapic-list.dart';
 import './pages/config.dart';
+import './pages/crud-sample.dart';
 
 void main() {
 
   runApp(
     new MaterialApp(
-      home: Top()
+      home: MyApp()
     )
   );
 }
