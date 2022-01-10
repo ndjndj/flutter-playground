@@ -63,5 +63,12 @@ class DatabaseHelper {
     return Sqflite.firstIntValue(await db.rawQuery('SELECT COUNT(*) FROM $table'));
   }
 
+  Future<int> update(Map<String, dynamic> row) async {
+    Database db = await instance.database;
+    int id = row[columnId];
+    print([id]);
+    return await db.update(table, row, where: '$columnId = ?', whereArgs: [id]);
+  }
+  
 
 }
