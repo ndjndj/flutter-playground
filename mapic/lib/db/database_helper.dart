@@ -25,5 +25,16 @@ class DatabaseHelper {
     return _database;
   }
 
+  _initDatabase() async {
+    Directory documentsDirectory = await getApplicationDocumentsDirectory();
+    String path = join(documentsDirectory.path, _databaseName);
+
+    return await openDatabase(
+      path,
+      version: _databaseVersion,
+      onCreate: _onCreate
+    );
+  }
+
 
 }
