@@ -13,4 +13,16 @@ class SQLHelper {
       '''
     );
   }
+
+  static Future<sql.Database> db() async {
+    return sql.openDatabase(
+      'sample.db',
+      version: 1,
+      onCreate: (sql.Database database, int version) async {
+        await createTables(database);
+      }
+    );
+  }
+
+  
 }
