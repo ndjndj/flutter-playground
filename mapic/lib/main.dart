@@ -12,7 +12,7 @@ void main() {
 
   runApp(
     new MaterialApp(
-      home: MyApp()
+      home: Mapic()
     )
   );
 }
