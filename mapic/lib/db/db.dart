@@ -17,4 +17,17 @@ class DB {
       '''
     );
   }
+
+  static Future<sql.Database> db() async {
+    final directory = await getApplicationDocumentsDirectory();
+    final path = join(directory.path, 'mapic.db');
+
+    return sql.openDatabase(
+      path,
+      version: 1,
+      onCreate: (sql.Database database, int version) async {
+        await createTables(database);
+      }
+    );
+  }
 }
