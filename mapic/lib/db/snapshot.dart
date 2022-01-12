@@ -52,5 +52,5 @@ class SnapShot {
 
       final result = await database.update('snapshots', data, where: 'id = ?', whereArgs: [id]);
       return result;
-    }
+  }
 }
