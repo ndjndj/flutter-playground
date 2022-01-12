@@ -27,4 +27,10 @@ class SnapShot {
     final database = await db.DB.db();
     return database.query('snapshots', orderBy: 'id');
   }
+
+  static Future<List<Map<String, dynamic>>> getSnapshot(int id) async {
+    final database = await db.DB.db();
+
+    return database.query('snapshots', where: 'id = ?', whereArgs: [id], limit: 1);
+  }
 }
