@@ -53,4 +53,13 @@ class SnapShot {
       final result = await database.update('snapshots', data, where: 'id = ?', whereArgs: [id]);
       return result;
   }
+
+  static Future<void> deleteSnapshot(int id) async {
+    final database = await db.DB.db();
+    try {
+      await database.delete('snapshots', where: 'id = ?', whereArgs: [id]);
+    } catch (err) {
+      debugPrint('something went wrong when deleting an item: $err');
+    }
+  }
 }
