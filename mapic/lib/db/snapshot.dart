@@ -22,4 +22,9 @@ class SnapShot {
     final id = await database.insert('snapshots', data, conflictAlgorithm: sql.ConflictAlgorithm.replace);
     return id;
   }
+
+  static Future<List<Map<String, dynamic>>> getSnapshots() async {
+    final database = await db.DB.db();
+    return database.query('snapshots', orderBy: 'id');
+  }
 }
