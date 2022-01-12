@@ -33,4 +33,24 @@ class SnapShot {
 
     return database.query('snapshots', where: 'id = ?', whereArgs: [id], limit: 1);
   }
+
+  static Future<int> updateSnapshot(
+    int id,
+    String place,
+    String? description,
+    double? latitude,
+    double? longtitude) async {
+      final database = await db.DB.db();
+
+      final data = {
+        'place': place,
+        'description': description,
+        'latitude': latitude,
+        'longtitud': longtitude,
+        'createdAt': DateTime.now().toString()
+      };
+
+      final result = await database.update('snapshots', data, where: 'id = ?', whereArgs: [id]);
+      return result;
+    }
 }
