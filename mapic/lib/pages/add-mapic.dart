@@ -104,7 +104,7 @@ class _AddMapic extends State<AddMapic> {
               style: ElevatedButton.styleFrom(
                 primary: Colors.teal
               ),
-              onPressed: () {},
+              onPressed: _addSnapshot,
               child: Text('save', style: TextStyle(color: Colors.white))
             ),
           ]
