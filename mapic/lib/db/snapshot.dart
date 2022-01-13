@@ -16,7 +16,7 @@ class SnapShot {
       'place': place,
       'description': description,
       'latitude': latitude,
-      'longtitud': longtitude
+      'longtitude': longtitude
     };
 
     final id = await database.insert('snapshots', data, conflictAlgorithm: sql.ConflictAlgorithm.replace);
@@ -46,7 +46,7 @@ class SnapShot {
         'place': place,
         'description': description,
         'latitude': latitude,
-        'longtitud': longtitude,
+        'longtitude': longtitude,
         'createdAt': DateTime.now().toString()
       };
 
