@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:io';
+import '../db/snapshot.dart';
 
 class MapicList extends StatefulWidget {
   @override

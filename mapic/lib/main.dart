@@ -37,7 +37,7 @@ class Top extends StatefulWidget {
 
 class _TopState extends State<Top> {
   List<String> addressList = [];
-  static int _screenIndex = 0;
+  int _screenIndex = 0;
 
   static List<Widget> _pageList = [
     MapicList(),
