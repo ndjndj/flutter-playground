@@ -9,7 +9,7 @@ class AddMapic extends StatefulWidget {
 }
 
 class _AddMapic extends State<AddMapic> {
-  String _text = '';
+  String _place = '';
   File? _image;
 
   final picker = ImagePicker();
