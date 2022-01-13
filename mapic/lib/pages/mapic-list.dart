@@ -27,7 +27,7 @@ class _MapicList extends State<MapicList> {
         itemBuilder: (context, index) {
           return Card(
             child: ListTile(
-              title: Text(addressList[index])
+              title: Text(addressList[index]['title'])
             )
           );
         },
