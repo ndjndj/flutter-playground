@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:io';
 import 'package:image_picker/image_picker.dart';
+import '../db/snapshot.dart';
 import './map.dart';
+
 class AddMapic extends StatefulWidget {
   @override
   _AddMapic createState() => _AddMapic();
@@ -33,7 +35,7 @@ class _AddMapic extends State<AddMapic> {
   }
 
   Future<void> _addSnapshot() async {
-    
+
   }
 
   @override
