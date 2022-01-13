@@ -32,6 +32,9 @@ class _AddMapic extends State<AddMapic> {
 
   }
 
+  Future<void> _addSnapshot() async {
+    
+  }
 
   @override
   Widget build(BuildContext context) {
