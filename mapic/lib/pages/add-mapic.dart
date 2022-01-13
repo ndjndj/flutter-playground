@@ -35,7 +35,7 @@ class _AddMapic extends State<AddMapic> {
   }
 
   Future<void> _addSnapshot() async {
-
+    await SnapShot.createSnapshot(_place, null, null, null);
   }
 
   @override
