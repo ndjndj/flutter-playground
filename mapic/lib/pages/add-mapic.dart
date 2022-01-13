@@ -73,7 +73,7 @@ class _AddMapic extends State<AddMapic> {
                 labelStyle: TextStyle(fontSize: 12),
                 hintText: 'lol',
               ),
-              onChanged: (String value) {setState(() {_text = value;});}
+              onChanged: (String value) {setState(() {_place = value;});}
             ),
             TextField(
               decoration: InputDecoration(
@@ -91,7 +91,7 @@ class _AddMapic extends State<AddMapic> {
                       },
                   ),
               ),
-              onChanged: (String value) {setState(() {_text = value;});}
+              onChanged: (String value) {setState(() {_place= value;});}
             ),
             SizedBox(height: 15),
             ElevatedButton(
