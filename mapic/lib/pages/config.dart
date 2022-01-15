@@ -51,7 +51,6 @@ class _ConfigState extends State<Config> {
                 ListTile(
                   title: Text(_configList[index]['name']),
                 ),
-                Dropdown()
               ]
             ),
           );
