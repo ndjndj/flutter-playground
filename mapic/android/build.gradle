@@ -30,12 +30,14 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-defaultConfig {
-    // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-    applicationId "com.example.database_map"
-    targetSdkVersion 30
-    versionCode flutterVersionCode.toInteger()
-    versionName flutterVersionName
-    minSdkVersion 20
-    manifestPlaceholders = [API_KEY: System.getenv('API_KEY')]
+android {
+    defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/    application-id.html).
+        applicationId "com.example.database_map"
+        targetSdkVersion 30
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+        minSdkVersion 20
+        manifestPlaceholders = [API_KEY: System.getenv('API_KEY')]
+    }
 }
