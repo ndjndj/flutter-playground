@@ -9,8 +9,6 @@
 .history
 .svn/
 
-.launch.json
-
 # IntelliJ related
 *.iml
 *.ipr
