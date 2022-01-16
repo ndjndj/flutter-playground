@@ -37,4 +37,5 @@ defaultConfig {
     versionCode flutterVersionCode.toInteger()
     versionName flutterVersionName
     minSdkVersion 20
+    manifestPlaceholders = [API_KEY: System.getenv('API_KEY')]
 }
