@@ -7,6 +7,7 @@ import './pages/add-mapic.dart';
 import './pages/mapic-list.dart';
 import './pages/config.dart';
 import './pages/crud-sample.dart';
+import './pages/map-sample.dart';
 
 void main() {
 
