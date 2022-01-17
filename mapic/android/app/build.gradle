@@ -1,3 +1,7 @@
+def envProps = new Properties()
+new File('../.env').withReader('UTF-8') {
+    envProps.load(it)
+}
 def localProperties = new Properties()
 def localPropertiesFile = rootProject.file('local.properties')
 if (localPropertiesFile.exists()) {
@@ -49,7 +53,7 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         minSdkVersion 20
-        manifestPlaceholders = [API_KEY: System.getenv('API_KEY')]
+        manifestPlaceholders = ["MAP_API_KEY": envProps.MAP_API_KEY]
     }
 
     buildTypes {
