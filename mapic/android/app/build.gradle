@@ -53,7 +53,8 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         minSdkVersion 20
-        manifestPlaceholders = ["MAP_API_KEY": envProps.MAP_API_KEY, "applicationName": "io.flutter.app.FlutterApplication"]
+        manifestPlaceholders = ["MAP_API_KEY": envProps.MAP_API_KEY, "applicationName": "mapic"]
+    }
 
     buildTypes {
         release {
