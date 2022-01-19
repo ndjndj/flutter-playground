@@ -39,8 +39,8 @@ class MapSampleState extends State<MapSample> {
               markers: Set.from(marked),
               onTap: _handleTap
             ),
-            width: 300,
-            height: 300,
+            width: 480,
+            height: 480,
           )
       )
     );
