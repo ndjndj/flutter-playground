@@ -26,7 +26,7 @@ class Mapic extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
-      home: MapSample(),
+      home: Top(),
     );
   }
 }
