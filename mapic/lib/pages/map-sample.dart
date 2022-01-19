@@ -31,6 +31,8 @@ class MapSampleState extends State<MapSample> {
         onMapCreated: (GoogleMapController controller) {
           _controller.complete(controller);
         },
+        markers: Set.from(marked),
+        onTap: _handleTap
       )
     );
   }
