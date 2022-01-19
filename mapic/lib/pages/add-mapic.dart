@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'dart:io';
 import 'package:image_picker/image_picker.dart';
 import '../db/snapshot.dart';
-import './map.dart';
+import './map-sample.dart';
 
 class AddMapic extends StatefulWidget {
   @override
@@ -91,7 +91,7 @@ class _AddMapic extends State<AddMapic> {
                       onPressed: () async {
                         final address = await Navigator.of(context).push(
                           MaterialPageRoute(builder: (context) {
-                            return Map();
+                            return MapSample();
                           })
                         );
                       },
