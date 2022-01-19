@@ -28,19 +28,20 @@ class MapSampleState extends State<MapSample> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      body: Container(
-        child: GoogleMap(
-          mapType: MapType.normal,
-          initialCameraPosition: _kGooglePlex,
-          onMapCreated: (GoogleMapController controller) {
-            _controller.complete(controller);
-          },
-          markers: Set.from(marked),
-          onTap: _handleTap
-        ),
-        width: 300,
-        height: 300,
-        alignment: Alignment.center,
+      body: Align(
+          child: Container(
+            child: GoogleMap(
+              mapType: MapType.normal,
+              initialCameraPosition: _kGooglePlex,
+              onMapCreated: (GoogleMapController controller) {
+                _controller.complete(controller);
+              },
+              markers: Set.from(marked),
+              onTap: _handleTap
+            ),
+            width: 300,
+            height: 300,
+          )
       )
     );
   }
