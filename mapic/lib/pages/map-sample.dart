@@ -45,7 +45,13 @@ class MapSampleState extends State<MapSample> {
                 height: 480,
               ),
             ),
-            
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.teal
+              ),
+              onPressed: () {},
+              child: Text('save', style: TextStyle(color: Colors.white))
+            ),
           ]
       )
     );
