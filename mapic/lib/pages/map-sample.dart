@@ -52,7 +52,9 @@ class MapSampleState extends State<MapSample> {
               style: ElevatedButton.styleFrom(
                 primary: Colors.teal
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pop('Map -> add');
+              },
               child: Text('save', style: TextStyle(color: Colors.white))
             ),
           ]
