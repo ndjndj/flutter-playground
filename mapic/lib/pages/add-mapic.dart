@@ -11,7 +11,7 @@ class AddMapic extends StatefulWidget {
 }
 
 class _AddMapic extends State<AddMapic> {
-  var _placeController = TextEditingController();
+  var _addressController = TextEditingController();
   File? _image;
 
   final picker = ImagePicker();
@@ -35,7 +35,7 @@ class _AddMapic extends State<AddMapic> {
   }
 
   Future<void> _addSnapshot() async {
-    await SnapShot.createSnapshot(_placeController.text, null, null, null);
+    await SnapShot.createSnapshot(_addressController.text, null, null, null);
 
   }
 
@@ -74,7 +74,7 @@ class _AddMapic extends State<AddMapic> {
                 ),
             SizedBox(height: 30),
             TextField(
-              controller: _placeController,
+              controller: _addressController,
               decoration: InputDecoration(
                 labelText: 'place name',
                 labelStyle: TextStyle(fontSize: 12),
@@ -83,7 +83,7 @@ class _AddMapic extends State<AddMapic> {
 
             ),
             TextField(
-              controller: _placeController,
+              controller: _addressController,
               decoration: InputDecoration(
                 labelText: 'address',
                 labelStyle: TextStyle(fontSize: 12),
@@ -97,7 +97,7 @@ class _AddMapic extends State<AddMapic> {
                           })
                         );
                         if (address != null) {
-                          setState(() {_placeController.text = address;});
+                          setState(() {_addressController.text = address;});
                         }
                       },
                   ),
