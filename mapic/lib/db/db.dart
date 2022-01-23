@@ -24,6 +24,9 @@ class DB {
     final directory = await getApplicationDocumentsDirectory();
     final path = join(directory.path, 'mapic.db');
 
+    //DB削除
+    await sql.deleteDatabase(path);
+
     return sql.openDatabase(
       path,
       version: 1,
