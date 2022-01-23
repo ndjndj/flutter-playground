@@ -35,7 +35,7 @@ class _AddMapic extends State<AddMapic> {
   }
 
   Future<void> _addSnapshot() async {
-    //await SnapShot.createSnapshot(_placeController, null, null, null);
+    await SnapShot.createSnapshot(_placeController.text, null, null, null);
 
   }
 
@@ -97,7 +97,7 @@ class _AddMapic extends State<AddMapic> {
                           })
                         );
                         if (address != null) {
-                          setState(() {_placeController = address;});
+                          setState(() {_placeController.text = address;});
                         }
                       },
                   ),
