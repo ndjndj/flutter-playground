@@ -8,8 +8,8 @@ class DB {
     await database.execute(
       '''CREATE TABLE snapshots(
         id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-        place TEXT,
         address TEXT,
+        place TEXT,
         description TEXT,
         latitude REAL,
         longtitude REAL,
@@ -18,6 +18,7 @@ class DB {
       '''
     );
   }
+
 
   static Future<sql.Database> db() async {
     final directory = await getApplicationDocumentsDirectory();
