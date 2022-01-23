@@ -118,7 +118,7 @@ class _AddMapic extends State<AddMapic> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: getImage,
+        onPressed: () {},
         child: Icon(Icons.perm_media),
       ),
     );
