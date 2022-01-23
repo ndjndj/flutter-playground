@@ -94,6 +94,9 @@ class _AddMapic extends State<AddMapic> {
                             return MapSample();
                           })
                         );
+                        if (address != null) {
+                          setState(() {_place = address;});
+                        }
                       },
                   ),
               ),
