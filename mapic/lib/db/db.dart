@@ -9,6 +9,7 @@ class DB {
       '''CREATE TABLE snapshots(
         id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
         place TEXT,
+        address TEXT,
         description TEXT,
         latitude REAL,
         longtitude REAL,
