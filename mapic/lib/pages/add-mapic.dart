@@ -13,7 +13,7 @@ class AddMapic extends StatefulWidget {
 class _AddMapic extends State<AddMapic> {
   var _addressController = TextEditingController();
   var _placeController = TextEditingController();
-  
+
   File? _image;
 
   final picker = ImagePicker();
@@ -76,7 +76,7 @@ class _AddMapic extends State<AddMapic> {
                 ),
             SizedBox(height: 30),
             TextField(
-              controller: _addressController,
+              controller: _placeController,
               decoration: InputDecoration(
                 labelText: 'place name',
                 labelStyle: TextStyle(fontSize: 12),
