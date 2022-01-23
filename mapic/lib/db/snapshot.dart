@@ -6,6 +6,7 @@ import './db.dart' as db;
 class SnapShot {
   static Future<int> createSnapshot(
     String place,
+    String? address,
     String? description,
     double? latitude,
     double? longtitude
@@ -14,6 +15,7 @@ class SnapShot {
 
     final data = {
       'place': place,
+      'address': address,
       'description': description,
       'latitude': latitude,
       'longtitude': longtitude
@@ -37,6 +39,7 @@ class SnapShot {
   static Future<int> updateSnapshot(
     int id,
     String place,
+    String? address,
     String? description,
     double? latitude,
     double? longtitude) async {
@@ -44,6 +47,7 @@ class SnapShot {
 
       final data = {
         'place': place,
+        'address': address,
         'description': description,
         'latitude': latitude,
         'longtitude': longtitude,
