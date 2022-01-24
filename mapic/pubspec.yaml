@@ -39,6 +39,7 @@ dependencies:
   path_provider: any
   path:
   google_maps_flutter:
+  location: any
 
 dev_dependencies:
   flutter_test:
