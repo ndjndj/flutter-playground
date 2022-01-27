@@ -72,7 +72,8 @@ class MapSampleState extends State<MapSample> {
       );
     });
     placeMarks = await placemarkFromCoordinates(tappedPoint.latitude, tappedPoint.longitude, localeIdentifier: 'ja_JP');
-    print(placeMarks);
+    //print(placeMarks);
+    print(placeMarks![1].street);
   }
 
 }
