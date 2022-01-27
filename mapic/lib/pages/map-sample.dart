@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-
+import 'package:geocoding/geocoding.dart';
 class MapSample extends StatefulWidget {
   @override
   State<MapSample> createState() => MapSampleState();
@@ -15,6 +15,8 @@ class MapSampleState extends State<MapSample> {
     'latitutde': '',
     'longtitude': ''
   };
+
+  List<Placemark>? placeMarks;
 
   static final CameraPosition _kGooglePlex = CameraPosition(
     target: LatLng(37.42796133580664, -122.085749655962),
@@ -58,7 +60,7 @@ class MapSampleState extends State<MapSample> {
     );
   }
 
-  _handleTap(LatLng tappedPoint) {
+  _handleTap(LatLng tappedPoint) async {
     print(tappedPoint);
     setState(() {
       marked = [];
@@ -69,6 +71,8 @@ class MapSampleState extends State<MapSample> {
         )
       );
     });
+    placeMarks = await placemarkFromCoordinates(tappedPoint.latitude, tappedPoint.longitude);
+
   }
 
 }
