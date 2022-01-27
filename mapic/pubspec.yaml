@@ -40,6 +40,7 @@ dependencies:
   path:
   google_maps_flutter:
   location: any
+  geocoding: any
 
 dev_dependencies:
   flutter_test:
