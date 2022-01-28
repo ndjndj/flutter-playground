@@ -17,6 +17,7 @@ class MapSampleState extends State<MapSample> {
   };
 
   List<Placemark>? placeMarks;
+  String place = '';
 
   static final CameraPosition _kGooglePlex = CameraPosition(
     target: LatLng(37.42796133580664, -122.085749655962),
@@ -46,6 +47,10 @@ class MapSampleState extends State<MapSample> {
                 height: 480,
               ),
             ),
+            Text(
+              place,
+
+            ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 primary: Colors.teal
@@ -72,6 +77,7 @@ class MapSampleState extends State<MapSample> {
       );
     });
     placeMarks = await placemarkFromCoordinates(tappedPoint.latitude, tappedPoint.longitude, localeIdentifier: 'ja_JP');
+    place = placeMarks![1].street.toString();
     //print(placeMarks);
     print(placeMarks![1].street);
   }
