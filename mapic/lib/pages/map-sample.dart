@@ -13,7 +13,8 @@ class MapSampleState extends State<MapSample> {
   List<Marker> marked = [];
   Map<String, dynamic> _address = {
     'latitutde': 0.00,
-    'longtitude': 0.00
+    'longtitude': 0.00,
+    'address': ''
   };
 
   List<Placemark>? placeMarks;
