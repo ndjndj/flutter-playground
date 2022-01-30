@@ -99,7 +99,7 @@ class _AddMapic extends State<AddMapic> {
                           })
                         );
                         if (address != null) {
-                          setState(() {_addressController.text = address;});
+                          setState(() {_addressController.text = address['address'];});
                         }
                       },
                   ),
