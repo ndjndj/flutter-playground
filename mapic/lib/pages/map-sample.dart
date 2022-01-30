@@ -12,8 +12,8 @@ class MapSampleState extends State<MapSample> {
 
   List<Marker> marked = [];
   Map<String, dynamic> _address = {
-    'latitutde': '',
-    'longtitude': ''
+    'latitutde': 0.00,
+    'longtitude': 0.00
   };
 
   List<Placemark>? placeMarks;
@@ -77,6 +77,8 @@ class MapSampleState extends State<MapSample> {
       );
     });
     placeMarks = await placemarkFromCoordinates(tappedPoint.latitude, tappedPoint.longitude, localeIdentifier: 'ja_JP');
+    _address['latitude'] = tappedPoint.latitude;
+    _address['longtitude'] = tappedPoint.longitude;
     place = placeMarks![1].street.toString();
     //print(placeMarks);
     print(placeMarks![1].street);
