@@ -57,7 +57,7 @@ class MapSampleState extends State<MapSample> {
                 primary: Colors.teal
               ),
               onPressed: () {
-                Navigator.of(context).pop('Map -> add');
+                Navigator.of(context).pop(_address);
               },
               child: Text('save', style: TextStyle(color: Colors.white))
             ),
