@@ -78,9 +78,11 @@ class MapSampleState extends State<MapSample> {
       );
     });
     placeMarks = await placemarkFromCoordinates(tappedPoint.latitude, tappedPoint.longitude, localeIdentifier: 'ja_JP');
+    place = placeMarks![1].street.toString();
     _address['latitude'] = tappedPoint.latitude;
     _address['longtitude'] = tappedPoint.longitude;
-    place = placeMarks![1].street.toString();
+    _address['address'] = place;
+
     //print(placeMarks);
     print(placeMarks![1].street);
   }
