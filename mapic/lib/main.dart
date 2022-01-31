@@ -53,6 +53,10 @@ class _TopState extends State<Top> {
         label: 'List'
       ),
       BottomNavigationBarItem(
+        icon: Icon(Icons.book),
+        label: 'Album'
+      ),
+      BottomNavigationBarItem(
         icon: Icon(Icons.add_circle_outline),
         label: 'Add',
       ),

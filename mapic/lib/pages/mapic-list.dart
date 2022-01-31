@@ -32,10 +32,9 @@ class _MapicList extends State<MapicList> {
       body: ListView.builder(
         itemCount: addressList.length,
         itemBuilder: (context, index) {
-          return Card(
-            child: ListTile(
+          return ListTile(
               title: Text(addressList[index]['place'])
-            )
+              
           );
         },
       ),
