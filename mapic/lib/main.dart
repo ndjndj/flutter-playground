@@ -42,6 +42,7 @@ class _TopState extends State<Top> {
 
   static List<Widget> _pageList = [
     MapicList(),
+    MapicList(),
     AddMapic(),
     Config(),
   ];
