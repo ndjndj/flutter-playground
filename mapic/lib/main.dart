@@ -8,6 +8,7 @@ import './pages/mapic-list.dart';
 import './pages/config.dart';
 import './pages/crud-sample.dart';
 import './pages/map-sample.dart';
+import './pages/map.dart';
 
 void main() {
 
@@ -42,7 +43,7 @@ class _TopState extends State<Top> {
 
   static List<Widget> _pageList = [
     MapicList(),
-    MapicList(),
+    Map(),
     AddMapic(),
     Config(),
   ];
