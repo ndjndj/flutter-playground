@@ -52,11 +52,14 @@ class _AddMapic extends State<AddMapic> {
         child: Column(
           children: <Widget>[
             _image != null
-              ? Image.file(
-                  _image!,
-                  width: 160,
-                  height: 160,
-                  fit: BoxFit.cover,
+              ? ClipRRect(child:
+                  Image.file(
+                    _image!,
+                    width: 160,
+                    height: 160,
+                    fit: BoxFit.cover,
+                  ),
+                  borderRadius: BorderRadius.circular(15.0),
                 )
               : Container(
                   width: 160,
