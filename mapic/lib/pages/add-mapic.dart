@@ -48,22 +48,22 @@ class _AddMapic extends State<AddMapic> {
         title: Text('AddMapic')
       ),
       body: Container(
-        padding: EdgeInsets.symmetric(vertical: 32, horizontal: 64),
+        padding: EdgeInsets.symmetric(vertical: 16, horizontal: 64),
         child: Column(
           children: <Widget>[
             _image != null
               ? ClipRRect(child:
                   Image.file(
                     _image!,
-                    width: 300,
-                    height: 300,
+                    width: 280,
+                    height: 280,
                     fit: BoxFit.cover,
                   ),
                   borderRadius: BorderRadius.circular(15.0),
                 )
               : Container(
-                  width: 300,
-                  height: 300,
+                  width: 280,
+                  height: 280,
                   child: Card(
                     child: InkWell(
                       onTap: getImage,
@@ -76,22 +76,22 @@ class _AddMapic extends State<AddMapic> {
                       ),
                     ),
                   ),
+              ),
+              Row(children: <Widget>[
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.teal
+                  ),
+                  onPressed: _addSnapshot,
+                  child: Text('save', style: TextStyle(color: Colors.white))
                 ),
-            SizedBox(height: 5),
-            Row(children: <Widget>[
-              ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                primary: Colors.teal
-              ),
-              onPressed: _addSnapshot,
-              child: Text('save', style: TextStyle(color: Colors.white))
-            ),ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                primary: Colors.teal
-              ),
-              onPressed: _addSnapshot,
-              child: Text('save', style: TextStyle(color: Colors.white))
-            ),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.teal
+                  ),
+                  onPressed: _addSnapshot,
+                  child: Text('save', style: TextStyle(color: Colors.white))
+                ),
             ]),
             TextField(
               controller: _placeController,
