@@ -55,15 +55,15 @@ class _AddMapic extends State<AddMapic> {
               ? ClipRRect(child:
                   Image.file(
                     _image!,
-                    width: 160,
-                    height: 160,
+                    width: 280,
+                    height: 280,
                     fit: BoxFit.cover,
                   ),
                   borderRadius: BorderRadius.circular(15.0),
                 )
               : Container(
-                  width: 160,
-                  height: 160,
+                  width: 280,
+                  height: 280,
                   child: Card(
                     child: InkWell(
                       onTap: getImage,
@@ -77,7 +77,7 @@ class _AddMapic extends State<AddMapic> {
                     ),
                   ),
                 ),
-            SizedBox(height: 30),
+            SizedBox(height: 5),
             TextField(
               controller: _placeController,
               decoration: InputDecoration(
