@@ -48,22 +48,22 @@ class _AddMapic extends State<AddMapic> {
         title: Text('AddMapic')
       ),
       body: Container(
-        padding: EdgeInsets.all(64),
+        padding: EdgeInsets.symmetric(vertical: 32, horizontal: 64),
         child: Column(
           children: <Widget>[
             _image != null
               ? ClipRRect(child:
                   Image.file(
                     _image!,
-                    width: 280,
-                    height: 280,
+                    width: 300,
+                    height: 300,
                     fit: BoxFit.cover,
                   ),
                   borderRadius: BorderRadius.circular(15.0),
                 )
               : Container(
-                  width: 280,
-                  height: 280,
+                  width: 300,
+                  height: 300,
                   child: Card(
                     child: InkWell(
                       onTap: getImage,
