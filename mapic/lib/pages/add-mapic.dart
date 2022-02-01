@@ -124,6 +124,7 @@ class _AddMapic extends State<AddMapic> {
         onPressed: () {},
         child: Icon(Icons.perm_media),
       ),
+      
     );
   }
 }
