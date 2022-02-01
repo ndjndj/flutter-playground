@@ -78,6 +78,21 @@ class _AddMapic extends State<AddMapic> {
                   ),
                 ),
             SizedBox(height: 5),
+            Row(children: <Widget>[
+              ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.teal
+              ),
+              onPressed: _addSnapshot,
+              child: Text('save', style: TextStyle(color: Colors.white))
+            ),ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.teal
+              ),
+              onPressed: _addSnapshot,
+              child: Text('save', style: TextStyle(color: Colors.white))
+            ),
+            ]),
             TextField(
               controller: _placeController,
               decoration: InputDecoration(
@@ -124,7 +139,7 @@ class _AddMapic extends State<AddMapic> {
         onPressed: () {},
         child: Icon(Icons.perm_media),
       ),
-      
+
     );
   }
 }
