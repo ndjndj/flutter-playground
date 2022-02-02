@@ -31,14 +31,16 @@ class _MapicList extends State<MapicList> {
       ),
       body: ListView.builder(
         itemCount: addressList.length,
-        itemBuilder: (context, index) {
-          return Card(
-            child: ListTile(
-              title: Text(addressList[index]['place'])
+        itemBuilder: (BuildContext context, int index) => ExpansionTile(
+          title: addressList[index]['place'],
+          children: <Widget>[
+            Container(
+              height: 100,
+              color: Colors.blue,
             )
-          );
-        },
-      ),
+          ],
+        ),
+      )
     );
   }
 }
