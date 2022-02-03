@@ -35,6 +35,7 @@ class _MapicList extends State<MapicList> {
           child: Padding(
             padding: EdgeInsets.only(top: 36.0, left: 6.0, right: 6.0, bottom: 6.0),
             child: ExpansionTile(
+              leading: Icon(Icons.face, size: 36.0),
               title: Text('Birth'),
               children: <Widget>[
                 Text('test text1'),
