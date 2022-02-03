@@ -32,7 +32,7 @@ class _MapicList extends State<MapicList> {
       body: ListView.builder(
         itemCount: addressList.length,
         itemBuilder: (BuildContext context, int index) => ExpansionTile(
-          title: addressList[index]['place'],
+          title: Text('test'),
           children: <Widget>[
             Container(
               height: 100,
