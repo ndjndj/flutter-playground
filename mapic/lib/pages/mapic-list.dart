@@ -31,15 +31,19 @@ class _MapicList extends State<MapicList> {
       ),
       body: ListView.builder(
         itemCount: addressList.length,
-        itemBuilder: (BuildContext context, int index) => ExpansionTile(
-          title: Text('test'),
-          children: <Widget>[
-            Container(
-              height: 100,
-              color: Colors.blue,
-            )
-          ],
-        ),
+        itemBuilder: (BuildContext context, int index) => Card(
+          child: Padding(
+            padding: EdgeInsets.only(top: 36.0, left: 6.0, right: 6.0, bottom: 6.0),
+            child: ExpansionTile(
+              title: Text('Birth'),
+              children: <Widget>[
+                Text('test text1'),
+                Text('test text2'),
+                Text('test text3'),
+              ],
+            ),
+          ),
+        )
       )
     );
   }
