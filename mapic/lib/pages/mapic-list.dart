@@ -33,7 +33,7 @@ class _MapicList extends State<MapicList> {
         itemCount: addressList.length,
         itemBuilder: (BuildContext context, int index) => Card(
           child: Padding(
-            padding: EdgeInsets.only(top: 36.0, left: 6.0, right: 6.0),
+            padding: EdgeInsets.only(top: 0.0, left: 6.0, right: 6.0, bottom: 0.0),
             child: ExpansionTile(
               title: Text('Birth'),
               children: <Widget>[
