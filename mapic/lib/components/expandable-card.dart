@@ -9,6 +9,12 @@ class ExpandableCard extends StatefulWidget {
 class _ExpandableCard extends State<ExpandableCard> {
 
   @override
+  void initState() {
+    animationController = AnimationController(
+      duration: const Duration(milliseconds: 200),
+      vsync: this);
+  }
+
   Widget build(BuildContext context) {
     return Card(
       margin: EdgeInsets.zero,
