@@ -28,7 +28,7 @@ class _ExpandableCard extends State<ExpandableCard> {
   */
   _handleTap () {
     setState(() {
-      _height = 400;
+      _height = _height == 400 ? 200 : 400;
     });
   }
 
