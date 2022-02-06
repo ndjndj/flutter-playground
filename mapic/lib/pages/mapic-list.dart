@@ -31,49 +31,19 @@ class _MapicList extends State<MapicList> {
         title: Text('Mapic'),
       ),
       body: Stack(
-        children: <Widget>[/*
+        children: <Widget>[
           Positioned(
-            top: 450.0,
+            top: 300,
             left: 0.0,
             right: 0.0,
-            child: Card(
-              margin: EdgeInsets.zero,
-              elevation: 3.0,
-              color: Colors.orange,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0))
-              ),
-              child: Container(width: double.infinity, height: 200.0)
-            ),
+            child: ExpandableCard(),
           ),
           Positioned(
-            top: 300.0,
+            top: 150,
             left: 0.0,
             right: 0.0,
-            child: Card(
-              margin: EdgeInsets.zero,
-              elevation: 3.0,
-              color: Colors.orange,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0))
-              ),
-              child: Container(width: double.infinity, height: 200.0)
-            ),
+            child: ExpandableCard(),
           ),
-          Positioned(
-            top: 150.0,
-            left: 0.0,
-            right: 0.0,
-            child: Card(
-              margin: EdgeInsets.zero,
-              elevation: 3.0,
-              color: Colors.blue,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0))
-              ),
-              child: Container(width: double.infinity, height: 200.0)
-            ),
-          ),*/
           Positioned(
             top: 0,
             left: 0.0,

@@ -41,7 +41,6 @@ class _ExpandableCard extends State<ExpandableCard> {
           duration: Duration(milliseconds: 200),
           width: double.infinity,
           height: _height,
-//          color: _color,
           decoration: BoxDecoration (
             borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0)),
             color: _color
