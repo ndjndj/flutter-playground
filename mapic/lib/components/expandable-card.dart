@@ -13,7 +13,7 @@ class _ExpandableCard extends State<ExpandableCard> {
     return Card(
       margin: EdgeInsets.zero,
       elevation: 3.0,
-      color: Colors.orange,
+      color: Colors.red,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0))
       ),
