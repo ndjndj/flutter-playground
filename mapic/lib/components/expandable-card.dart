@@ -13,7 +13,8 @@ class _ExpandableCard extends State<ExpandableCard> {
 
   @override
   void initState() {
-
+    _height = 200;
+    _color = Colors.blue;
   }
   /*
   Widget build(BuildContext context) {
