@@ -49,7 +49,7 @@ class _ExpandableCard extends State<ExpandableCard> {
           color: _color
         ),*/
         color: _color,
-        
+        child: Text('test'),
       )
     );
 
