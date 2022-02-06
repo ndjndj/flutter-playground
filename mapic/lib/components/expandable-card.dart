@@ -7,5 +7,13 @@ class ExpandableCard extends StatefulWidget {
 }
 
 class _ExpandableCard extends State<ExpandableCard> {
-  
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      
+    );
+  }
+
+
 }
