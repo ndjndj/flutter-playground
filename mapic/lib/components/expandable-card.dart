@@ -11,7 +11,13 @@ class _ExpandableCard extends State<ExpandableCard> {
   @override
   Widget build(BuildContext context) {
     return Card(
-      
+      margin: EdgeInsets.zero,
+      elevation: 3.0,
+      color: Colors.orange,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0))
+      ),
+      child: Container(width: double.infinity, height: 200.0)
     );
   }
 
