@@ -42,13 +42,14 @@ class _ExpandableCard extends State<ExpandableCard> {
       onTap: _handleTap(),
       behavior: HitTestBehavior.opaque,
       child: Card(
-        child: AnimatedContainer(
+        /*child: AnimatedContainer(
           duration: Duration(milliseconds: 200),
           width: 200,
           height: _height,
           color: _color
-        ),
-
+        ),*/
+        color: _color,
+        
       )
     );
 

@@ -31,7 +31,7 @@ class _MapicList extends State<MapicList> {
         title: Text('Mapic'),
       ),
       body: Stack(
-        children: <Widget>[
+        children: <Widget>[/*
           Positioned(
             top: 450.0,
             left: 0.0,
@@ -73,7 +73,7 @@ class _MapicList extends State<MapicList> {
               ),
               child: Container(width: double.infinity, height: 200.0)
             ),
-          ),
+          ),*/
           Positioned(
             top: 0,
             left: 0.0,
