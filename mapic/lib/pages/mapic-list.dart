@@ -82,7 +82,8 @@ class _MapicList extends State<MapicList> {
           ),
 
         ],
-      ),
+      )
+      
     );
   }
 }
