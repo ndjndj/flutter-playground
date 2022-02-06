@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:io';
 import '../db/snapshot.dart';
+import '../components/expandable-card.dart';
 
 class MapicList extends StatefulWidget {
   @override
