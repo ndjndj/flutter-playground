@@ -40,6 +40,7 @@ class _ExpandableCard extends State<ExpandableCard> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: _handleTap(),
+      behavior: HitTestBehavior.opaque,
       child: Card(
         child: AnimatedContainer(
           duration: Duration(milliseconds: 200),
@@ -47,6 +48,7 @@ class _ExpandableCard extends State<ExpandableCard> {
           height: _height,
           color: _color
         ),
+
       )
     );
 
