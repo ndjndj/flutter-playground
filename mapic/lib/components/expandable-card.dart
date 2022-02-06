@@ -8,7 +8,7 @@ class ExpandableCard extends StatefulWidget {
 
 class _ExpandableCard extends State<ExpandableCard> {
   //AnimationController _controller;
-
+  double _height = 200;
   @override
   void initState() {
 
@@ -26,6 +26,12 @@ class _ExpandableCard extends State<ExpandableCard> {
     );
   }
   */
+  _handleTap () {
+    setState(() {
+      _height = 400;
+    });
+  }
+
 
   Widget build(BuildContext context) {
     return Card(
