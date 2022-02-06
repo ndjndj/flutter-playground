@@ -9,6 +9,8 @@ class ExpandableCard extends StatefulWidget {
 class _ExpandableCard extends State<ExpandableCard> {
   //AnimationController _controller;
   double _height = 200;
+  Color _color = Colors.blue;
+
   @override
   void initState() {
 
@@ -29,6 +31,7 @@ class _ExpandableCard extends State<ExpandableCard> {
   _handleTap () {
     setState(() {
       _height == 400 ? _height = 200 : _height = 400;
+      _color == Colors.blue ? _color = Colors.red : _color =  Colors.blue;
     });
   }
 
@@ -40,8 +43,8 @@ class _ExpandableCard extends State<ExpandableCard> {
         child: AnimatedContainer(
           duration: Duration(milliseconds: 200),
           width: 200,
-          height: 200,
-          color: Colors.blue
+          height: _height,
+          color: _color
         ),
       )
     );
