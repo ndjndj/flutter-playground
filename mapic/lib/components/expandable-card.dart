@@ -16,26 +16,13 @@ class _ExpandableCard extends State<ExpandableCard> {
     _height = 200;
     _color = Colors.blue;
   }
-  /*
-  Widget build(BuildContext context) {
-    return Card(
-      margin: EdgeInsets.zero,
-      elevation: 3.0,
-      color: Colors.red,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0))
-      ),
-      child: Container(width: double.infinity, height: 200.0)
-    );
-  }
-  */
+
   _handleTap() {
     setState(() {
       _height == 400 ? _height = 200 : _height = 400;
       _color == Colors.blue ? _color = Colors.red : _color =  Colors.blue;
     });
   }
-
 
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -44,17 +31,19 @@ class _ExpandableCard extends State<ExpandableCard> {
         await _handleTap();
       },
       behavior: HitTestBehavior.opaque,
-      child: Container(
+      child: Card(
+        margin: EdgeInsets.zero,
+        elevation: 3.0,
+        shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0))
+        ),
         child: AnimatedContainer(
           duration: Duration(milliseconds: 200),
-          width: 200,
+          width: double.infinity,
           height: _height,
           color: _color
         ),
-        
       ),
     );
-
   }
-
 }
