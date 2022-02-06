@@ -34,14 +34,17 @@ class _ExpandableCard extends State<ExpandableCard> {
 
 
   Widget build(BuildContext context) {
-    return Card(
-      child: AnimatedContainer(
-        duration: Duration(milliseconds: 200),
-        width: 200,
-        height: 100,
-        color: Colors.blue
-      ),
+    return GestureDetector(
+      child: Card(
+        child: AnimatedContainer(
+          duration: Duration(milliseconds: 200),
+          width: 200,
+          height: 200,
+          color: Colors.blue
+        ),
+      )
     );
+
   }
 
 }
