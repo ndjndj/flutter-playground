@@ -29,22 +29,46 @@ class _MapicList extends State<MapicList> {
       appBar: AppBar(
         title: Text('Mapic'),
       ),
-      body: ListView.builder(
-        itemCount: addressList.length,
-        itemBuilder: (BuildContext context, int index) => Card(
-          child: Padding(
-            padding: EdgeInsets.only(top: 0.0, left: 6.0, right: 6.0, bottom: 0.0),
-            child: ExpansionTile(
-              title: Text('Birth'),
-              children: <Widget>[
-                Text('test text1'),
-                Text('test text2'),
-                Text('test text3'),
-              ],
+      body: Stack(
+        children: <Widget>[
+          Positioned(
+            bottom: 150.0,
+            left: 0.0,
+            right: 0.0,
+            child: Card(
+              margin: EdgeInsets.zero,
+              elevation: 3.0,
+              color: Colors.red,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30.0))),
+              child: Container(width: double.infinity, height: 200.0)
             ),
           ),
-        )
-      )
+          Positioned(
+            bottom: 50.0,
+            left: 0.0,
+            right: 0.0,
+            child: Card(
+              margin: EdgeInsets.zero,
+              elevation: 3.0,
+              color: Colors.blue,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30.0))),
+              child: Container(width: double.infinity, height: 200.0)
+            ),
+          ),
+          Positioned(
+            bottom: -50.0,
+            left: 0.0,
+            right: 0.0,
+            child: Card(
+              margin: EdgeInsets.zero,
+              elevation: 3.0,
+              color: Colors.orange,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30.0))),
+              child: Container(width: double.infinity, height: 200.0)
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
