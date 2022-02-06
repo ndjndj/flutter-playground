@@ -7,12 +7,11 @@ class ExpandableCard extends StatefulWidget {
 }
 
 class _ExpandableCard extends State<ExpandableCard> {
+  //AnimationController _controller;
 
   @override
   void initState() {
-    animationController = AnimationController(
-      duration: const Duration(milliseconds: 200),
-      vsync: this);
+
   }
 
   Widget build(BuildContext context) {
