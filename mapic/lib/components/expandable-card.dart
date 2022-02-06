@@ -13,7 +13,7 @@ class _ExpandableCard extends State<ExpandableCard> {
   void initState() {
 
   }
-
+  /*
   Widget build(BuildContext context) {
     return Card(
       margin: EdgeInsets.zero,
@@ -25,6 +25,17 @@ class _ExpandableCard extends State<ExpandableCard> {
       child: Container(width: double.infinity, height: 200.0)
     );
   }
+  */
 
+  Widget build(BuildContext context) {
+    return Card(
+      child: AnimatedContainer(
+        duration: Duration(milliseconds: 200),
+        width: 200,
+        height: 100,
+        color: Colors.blue
+      ),
+    );
+  }
 
 }
