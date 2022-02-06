@@ -32,7 +32,7 @@ class _MapicList extends State<MapicList> {
       body: Stack(
         children: <Widget>[
           Positioned(
-            top:r 100.0,
+            top: 100.0,
             left: 0.0,
             right: 0.0,
             child: Card(
