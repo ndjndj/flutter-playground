@@ -32,26 +32,30 @@ class _MapicList extends State<MapicList> {
       body: Stack(
         children: <Widget>[
           Positioned(
-            top: 100.0,
+            top: 300.0,
             left: 0.0,
             right: 0.0,
             child: Card(
               margin: EdgeInsets.zero,
               elevation: 3.0,
               color: Colors.orange,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30.0))),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(30.0))
+              ),
               child: Container(width: double.infinity, height: 200.0)
             ),
           ),
           Positioned(
-            top: 50.0,
+            top: 150.0,
             left: 0.0,
             right: 0.0,
             child: Card(
               margin: EdgeInsets.zero,
               elevation: 3.0,
               color: Colors.blue,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30.0))),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(30.0))
+              ),
               child: Container(width: double.infinity, height: 200.0)
             ),
           ),
@@ -64,7 +68,9 @@ class _MapicList extends State<MapicList> {
               margin: EdgeInsets.zero,
               elevation: 3.0,
               color: Colors.red,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(30.0))),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(30.0))
+              ),
               child: Container(width: double.infinity, height: 200.0)
             ),
           ),
