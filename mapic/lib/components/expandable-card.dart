@@ -34,14 +34,16 @@ class _ExpandableCard extends State<ExpandableCard> {
       child: Card(
         margin: EdgeInsets.zero,
         elevation: 3.0,
-        shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0))
-        ),
         child: AnimatedContainer(
           duration: Duration(milliseconds: 200),
           width: double.infinity,
           height: _height,
-          color: _color
+          color: _color,
+          decoration: ShapeDecoration(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0))
+            ),
+          ),
         ),
       ),
     );
