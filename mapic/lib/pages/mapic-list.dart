@@ -40,7 +40,7 @@ class _MapicList extends State<MapicList> {
               elevation: 3.0,
               color: Colors.orange,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(30.0))
+                borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0))
               ),
               child: Container(width: double.infinity, height: 200.0)
             ),
@@ -54,7 +54,7 @@ class _MapicList extends State<MapicList> {
               elevation: 3.0,
               color: Colors.blue,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(30.0))
+                borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0))
               ),
               child: Container(width: double.infinity, height: 200.0)
             ),
@@ -69,7 +69,7 @@ class _MapicList extends State<MapicList> {
               elevation: 3.0,
               color: Colors.red,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(30.0))
+                borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0))
               ),
               child: Container(width: double.infinity, height: 200.0)
             ),
