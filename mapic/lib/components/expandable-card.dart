@@ -32,17 +32,19 @@ class _ExpandableCard extends State<ExpandableCard> {
       },
       behavior: HitTestBehavior.opaque,
       child: Card(
+        shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0))
+        ),
         margin: EdgeInsets.zero,
         elevation: 3.0,
         child: AnimatedContainer(
           duration: Duration(milliseconds: 200),
           width: double.infinity,
           height: _height,
-          color: _color,
-          decoration: ShapeDecoration(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0))
-            ),
+//          color: _color,
+          decoration: BoxDecoration (
+            borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0)),
+            color: _color
           ),
         ),
       ),
