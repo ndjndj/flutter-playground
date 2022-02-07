@@ -39,6 +39,21 @@ class _MapicList extends State<MapicList> {
     _refresh();
   }
 
+  changeIndex (int tappedIndex)  async {
+    if (tappedIndex == 0) {
+      return;
+    }
+
+    final tapped = cardList[tappedIndex];
+    final preTapped = cardList[tappedIndex - 1];
+    setState(() {
+      cardList[tappedIndex] = preTapped;
+      cardList[tappedIndex - 1] = tapped;
+    });
+
+    return;
+  }
+
   void _refresh() async {
     final data = await SnapShot.getSnapshots();
     setState(() {
