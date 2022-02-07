@@ -3,10 +3,6 @@ import 'package:flutter/material.dart';
 
 class ExpandableCard extends StatefulWidget {
 
-  const ExpandableCard(this.parentFunction, this.index);
-  final index;
-  final parentFunction;
-
   @override
   _ExpandableCard createState() => _ExpandableCard();
 }
@@ -34,7 +30,6 @@ class _ExpandableCard extends State<ExpandableCard> {
       onTap: () async {
         print('ontap');
         await _handleTap();
-        await widget.parentFunction(widget.index);
       },
       behavior: HitTestBehavior.opaque,
       child: Card(
