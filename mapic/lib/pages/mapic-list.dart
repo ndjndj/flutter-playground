@@ -12,6 +12,27 @@ class MapicList extends StatefulWidget {
 class _MapicList extends State<MapicList> {
   List<Map<String, dynamic>> addressList = [];
 
+  List<Widget> cardList = <Widget>[
+    Positioned(
+      top: 300,
+      left: 0.0,
+      right: 0.0,
+      child: ExpandableCard(),
+    ),
+    Positioned(
+      top: 150,
+      left: 0.0,
+      right: 0.0,
+      child: ExpandableCard(),
+    ),
+    Positioned(
+      top: 0,
+      left: 0.0,
+      right: 0.0,
+      child: ExpandableCard(),
+    )
+  ];
+
   @override
   void initState() {
     super.initState();
@@ -31,27 +52,7 @@ class _MapicList extends State<MapicList> {
         title: Text('Mapic'),
       ),
       body: Stack(
-        children: <Widget>[
-          Positioned(
-            top: 300,
-            left: 0.0,
-            right: 0.0,
-            child: ExpandableCard(),
-          ),
-          Positioned(
-            top: 150,
-            left: 0.0,
-            right: 0.0,
-            child: ExpandableCard(),
-          ),
-          Positioned(
-            top: 0,
-            left: 0.0,
-            right: 0.0,
-            child: ExpandableCard(),
-          ),
-
-        ],
+        children: cardList
       )
 
     );
