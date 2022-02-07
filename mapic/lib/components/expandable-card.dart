@@ -32,6 +32,7 @@ class _ExpandableCard extends State<ExpandableCard> {
       onTap: () async {
         print('ontap');
         await _handleTap();
+        await parentFunction!();
       },
       behavior: HitTestBehavior.opaque,
       child: Card(
