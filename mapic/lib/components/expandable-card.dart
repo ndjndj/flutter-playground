@@ -11,6 +11,9 @@ class _ExpandableCard extends State<ExpandableCard> {
   double _height = 200;
   Color _color = Colors.blue;
 
+  Function? parentFunction;
+
+
   @override
   void initState() {
     _height = 200;
