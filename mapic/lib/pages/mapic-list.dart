@@ -17,7 +17,7 @@ class _MapicList extends State<MapicList> {
       top: 300,
       left: 0.0,
       right: 0.0,
-      child: ExpandableCard(),
+      child: ExpandableCard(callback: changeIndex),
     ),
     Positioned(
       top: 150,
