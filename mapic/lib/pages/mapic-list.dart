@@ -39,7 +39,7 @@ class _MapicList extends State<MapicList> {
     _refresh();
   }
 
-  changeIndex (int tappedIndex)  async {
+  void changeIndex (int tappedIndex)  async {
     if (tappedIndex == 0) {
       return;
     }

@@ -11,7 +11,7 @@ class _ExpandableCard extends State<ExpandableCard> {
   //AnimationController _controller;
   double _height = 200;
   Color _color = Colors.blue;
-
+  
   @override
   void initState() {
     _height = 200;
@@ -26,6 +26,7 @@ class _ExpandableCard extends State<ExpandableCard> {
   }
 
   Widget build(BuildContext context) {
+
     return GestureDetector(
       onTap: () async {
         print('ontap');
