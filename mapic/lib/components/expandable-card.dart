@@ -37,11 +37,7 @@ class _ExpandableCard extends State<ExpandableCard> {
 
       },
       behavior: HitTestBehavior.opaque,
-      child: Positioned(
-        top: widget.top,
-        left: 0.0,
-        right: 0.0,
-        child: Card(
+      child: Card(
           shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0))
           ),
@@ -57,7 +53,7 @@ class _ExpandableCard extends State<ExpandableCard> {
             ),
           ),
         ),
-      )
+      
     );
   }
 }
