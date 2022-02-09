@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 
 class ExpandableCard extends StatefulWidget {
-  ExpandableCard({Key? key, this.callback}) : super(key: key);
-  final Function? callback;
+  ExpandableCard({Key? key, this.top}) : super(key: key);
+  final double? top;
 
   @override
   _ExpandableCard createState() => _ExpandableCard();
@@ -37,7 +37,7 @@ class _ExpandableCard extends State<ExpandableCard> {
       },
       behavior: HitTestBehavior.opaque,
       child: Positioned(
-        top: 300,
+        top: widget.top,
         left: 0.0,
         right: 0.0,
         child: Card(
