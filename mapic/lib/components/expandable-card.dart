@@ -2,16 +2,17 @@ import 'package:flutter/material.dart';
 
 
 class ExpandableCard extends StatefulWidget {
+  ExpandableCard({Key? key, this.callback}) : super(key: key);
+  final Function? callback;
 
   @override
   _ExpandableCard createState() => _ExpandableCard();
 }
 
 class _ExpandableCard extends State<ExpandableCard> {
-  //AnimationController _controller;
   double _height = 200;
   Color _color = Colors.blue;
-  
+
   @override
   void initState() {
     _height = 200;
@@ -23,6 +24,7 @@ class _ExpandableCard extends State<ExpandableCard> {
       _height == 400 ? _height = 200 : _height = 400;
       _color == Colors.blue ? _color = Colors.red : _color =  Colors.blue;
     });
+    callback(1);
   }
 
   Widget build(BuildContext context) {
@@ -31,6 +33,7 @@ class _ExpandableCard extends State<ExpandableCard> {
       onTap: () async {
         print('ontap');
         await _handleTap();
+
       },
       behavior: HitTestBehavior.opaque,
       child: Card(
