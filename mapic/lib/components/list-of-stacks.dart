@@ -9,24 +9,9 @@ class ListOfStacks extends StatefulWidget {
 class _ListOfStacks extends State<ListOfStacks> {
 
    List<Widget> cardList = <Widget>[
-    Positioned(
-      top: 300,
-      left: 0.0,
-      right: 0.0,
-      child: ExpandableCard(),
-    ),
-    Positioned(
-      top: 150,
-      left: 0.0,
-      right: 0.0,
-      child: ExpandableCard(),
-    ),
-    Positioned(
-      top: 0,
-      left: 0.0,
-      right: 0.0,
-      child: ExpandableCard(),
-    )
+    ExpandableCard(top: 300, index: 0),
+    ExpandableCard(top: 150, index: 1),
+    ExpandableCard(top: 0, index: 2),
   ];
   List<bool> selectedList = [];
 
