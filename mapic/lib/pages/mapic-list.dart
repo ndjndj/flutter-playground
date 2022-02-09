@@ -4,7 +4,7 @@ import 'dart:io';
 import '../db/snapshot.dart';
 import '../components/expandable-card.dart';
 import '../components/inherited-wrapper.dart';
-
+import '../components/list-of-stacks.dart';
 
 class MapicList extends StatefulWidget {
   @override
