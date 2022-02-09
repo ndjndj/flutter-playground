@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 
 class ExpandableCard extends StatefulWidget {
-  ExpandableCard({Key? key, this.top}) : super(key: key);
+  ExpandableCard({Key? key, this.top, this.index}) : super(key: key);
   final double? top;
+  final int? index;
 
   @override
   _ExpandableCard createState() => _ExpandableCard();
