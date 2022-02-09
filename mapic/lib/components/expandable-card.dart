@@ -24,7 +24,7 @@ class _ExpandableCard extends State<ExpandableCard> {
       _height == 400 ? _height = 200 : _height = 400;
       _color == Colors.blue ? _color = Colors.red : _color =  Colors.blue;
     });
-    callback(1);
+
   }
 
   Widget build(BuildContext context) {
