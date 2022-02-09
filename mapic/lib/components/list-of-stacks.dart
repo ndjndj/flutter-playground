@@ -31,12 +31,15 @@ class _ListOfStacks extends State<ListOfStacks> {
   List<bool> selectedList = [];
 
   void detectSelectedIndex(index) async {
-    //init
+
     setState(() {
+      //init
       selectedList = List.filled(cardList.length, false);
-      
+      selectedList[index] = true;
     });
+
   }
+  
   @override
   Widget build(BuildContext context) {
     return Stack(
