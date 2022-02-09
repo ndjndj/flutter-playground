@@ -7,5 +7,5 @@ class InheritedWrapper extends InheritedWidget {
   static InheritedWrapper of(BuildContext context) => context.dependOnInheritedWidgetOfExactType<InheritedWrapper>() as InheritedWrapper;
 
   @override
-  bool updateShouldNotify(InheritedWrapper oldWidget) => oldWidget.index != index;
+  bool updateShouldNotify(InheritedWrapper oldWidget) => oldWidget.fnc != fnc;
 }
