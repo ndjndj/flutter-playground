@@ -37,6 +37,7 @@ class _ListOfStacks extends State<ListOfStacks> {
       selectedList = List.filled(cardList.length, false);
       selectedList[index] = true;
     });
+    
   }
 
   @override
