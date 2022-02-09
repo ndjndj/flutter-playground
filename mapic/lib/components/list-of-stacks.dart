@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../components/expandable-card.dart';
-
+import '../components/inherited-wrapper.dart';
 class ListOfStacks extends StatefulWidget {
   @override
   _ListOfStacks createState() => _ListOfStacks();
@@ -41,8 +41,11 @@ class _ListOfStacks extends State<ListOfStacks> {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: cardList,
+    return InheritedWrapper(
+      child: Stack(
+          children: cardList,
+      ),
+      fnc: detectSelectedIndex
     );
   }
 }
