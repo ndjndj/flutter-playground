@@ -64,14 +64,19 @@ class _MapicList extends State<MapicList> {
   }
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Mapic'),
-      ),
-      body: Stack(
-        children: cardList
-      )
-
+    return InheritedWrapper(
+        child: Scaffold(
+          appBar: AppBar(
+            title: Text('Mapic'),
+          ),
+          body: Stack(
+            children: cardList
+          )
+        ),
+        fnc: changeIndex
     );
+
+
+
   }
 }
