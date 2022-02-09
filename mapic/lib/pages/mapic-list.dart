@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'dart:io';
 import '../db/snapshot.dart';
 import '../components/expandable-card.dart';
+import '../components/inherited-wrapper.dart';
+
 
 class MapicList extends StatefulWidget {
   @override
