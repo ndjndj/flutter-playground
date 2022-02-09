@@ -28,7 +28,7 @@ class _ExpandableCard extends State<ExpandableCard> {
   }
 
   Widget build(BuildContext context) {
-
+    int? index = 0;
     return GestureDetector(
       onTap: () async {
         print('ontap');
@@ -36,22 +36,27 @@ class _ExpandableCard extends State<ExpandableCard> {
 
       },
       behavior: HitTestBehavior.opaque,
-      child: Card(
-        shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0))
-        ),
-        margin: EdgeInsets.zero,
-        elevation: 3.0,
-        child: AnimatedContainer(
-          duration: Duration(milliseconds: 200),
-          width: double.infinity,
-          height: _height,
-          decoration: BoxDecoration (
-            borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0)),
-            color: _color
+      child: Positioned(
+        top: 300,
+        left: 0.0,
+        right: 0.0,
+        child: Card(
+          shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0))
+          ),
+          margin: EdgeInsets.zero,
+          elevation: 3.0,
+          child: AnimatedContainer(
+            duration: Duration(milliseconds: 200),
+            width: double.infinity,
+            height: _height,
+            decoration: BoxDecoration (
+              borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0)),
+              color: _color
+            ),
           ),
         ),
-      ),
+      )
     );
   }
 }
