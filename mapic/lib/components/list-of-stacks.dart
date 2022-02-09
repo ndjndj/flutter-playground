@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../components/expandable-card.dart';
 
 class ListOfStacks extends StatefulWidget {
   @override
@@ -6,6 +7,7 @@ class ListOfStacks extends StatefulWidget {
 }
 
 class _ListOfStacks extends State<ListOfStacks> {
+
    List<Widget> cardList = <Widget>[
     Positioned(
       top: 300,
@@ -26,9 +28,12 @@ class _ListOfStacks extends State<ListOfStacks> {
       child: ExpandableCard(),
     )
   ];
+  List<bool> selectedList = [];
 
   @override
   Widget build(BuildContext context) {
-
+    return Stack(
+      children: cardList,
+    );
   }
 }
