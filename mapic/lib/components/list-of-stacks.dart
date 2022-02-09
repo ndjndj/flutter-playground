@@ -30,16 +30,15 @@ class _ListOfStacks extends State<ListOfStacks> {
   ];
   List<bool> selectedList = [];
 
+  //call from expandable-card
   void detectSelectedIndex(index) async {
-
     setState(() {
       //init
       selectedList = List.filled(cardList.length, false);
       selectedList[index] = true;
     });
-
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Stack(
