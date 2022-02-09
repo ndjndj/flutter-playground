@@ -28,13 +28,11 @@ class _MapicList extends State<MapicList> {
   }
   @override
   Widget build(BuildContext context) {
-    return InheritedWrapper(
-        child: Scaffold(
+    return Scaffold(
           appBar: AppBar(
             title: Text('Mapic'),
           ),
           body: ListOfStacks()
-        ),
     );
   }
 }
