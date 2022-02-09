@@ -33,13 +33,8 @@ class _MapicList extends State<MapicList> {
           appBar: AppBar(
             title: Text('Mapic'),
           ),
-          body: Stack(
-            children: cardList
-          )
+          body: ListOfStacks()
         ),
     );
-
-
-
   }
 }
