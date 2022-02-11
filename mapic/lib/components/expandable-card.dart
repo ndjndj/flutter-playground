@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import '../components/inherited-wrapper.dart';
 
 class ExpandableCard extends StatefulWidget {
   ExpandableCard({Key? key, this.index}) : super(key: key);
@@ -29,6 +29,8 @@ class _ExpandableCard extends State<ExpandableCard> {
 
   Widget build(BuildContext context) {
     int? index = widget.index;
+
+
     return GestureDetector(
       onTap: () async {
         print('ontap');
