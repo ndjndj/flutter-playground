@@ -42,6 +42,7 @@ class _ListOfStacks extends State<ListOfStacks> {
 
   @override
   Widget build(BuildContext context) {
+    final indexKey = GlobalObjectKey(context);
     return InheritedWrapper(
       child: Stack(
           children: cardList,
