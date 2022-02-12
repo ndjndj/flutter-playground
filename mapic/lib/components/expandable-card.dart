@@ -55,6 +55,7 @@ class _ExpandableCard extends State<ExpandableCard> {
               children: [
                 Text("test"),
                 Text("test"),
+                Image.asset('images/sample.png', fit: BoxFit.contain)
               ],
             ),
           ),
