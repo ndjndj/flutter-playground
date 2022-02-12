@@ -28,21 +28,18 @@ class _ListOfStacks extends State<ListOfStacks> {
       child: ExpandableCard(index: 2))
     ,
   ];
-  List<bool> selectedList = [];
 
   //call from expandable-card
   void detectSelectedIndex(index) async {
     setState(() {
       //init
-      selectedList = List.filled(cardList.length, false);
-      selectedList[index] = true;
     });
 
   }
 
   @override
   Widget build(BuildContext context) {
-    final indexKey = GlobalObjectKey(context);
+    //final indexKey = GlobalObjectKey<ExpandableCard>(context);
     return InheritedWrapper(
       child: Stack(
           children: cardList,
