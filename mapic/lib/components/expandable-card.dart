@@ -51,6 +51,12 @@ class _ExpandableCard extends State<ExpandableCard> {
               borderRadius: BorderRadius.all(Radius.circular(15.0)),
               color: _color,
             ),
+            child: Column(
+              children: [
+                Text("test"),
+                Text("test"),
+              ],
+            ),
           ),
         ),
 
