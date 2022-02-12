@@ -41,15 +41,15 @@ class _ExpandableCard extends State<ExpandableCard> {
           shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0))
           ),
-          margin: EdgeInsets.zero,
+          margin: EdgeInsets.symmetric(vertical: 2.0, horizontal: 0.0),
           elevation: 3.0,
           child: AnimatedContainer(
             duration: Duration(milliseconds: 200),
             width: double.infinity,
             height: _height,
             decoration: BoxDecoration (
-              borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0)),
-              color: _color
+              borderRadius: BorderRadius.all(Radius.circular(15.0)),
+              color: _color,
             ),
           ),
         ),
