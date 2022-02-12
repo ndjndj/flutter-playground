@@ -33,6 +33,7 @@ class _ListOfStacks extends State<ListOfStacks> {
   void detectSelectedIndex(index) async {
     setState(() {
       //init
+
     });
 
   }
@@ -40,11 +41,11 @@ class _ListOfStacks extends State<ListOfStacks> {
   @override
   Widget build(BuildContext context) {
     //final indexKey = GlobalObjectKey<ExpandableCard>(context);
-    return InheritedWrapper(
-      child: Stack(
-          children: cardList,
-      ),
-      fnc: detectSelectedIndex
+    return ListView.builder(
+      itemCount: cardList.length,
+      itemBuilder: (context, index) {
+        return ExpandableCard();
+      }
     );
   }
 }
