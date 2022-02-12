@@ -39,7 +39,7 @@ class _ExpandableCard extends State<ExpandableCard> {
       behavior: HitTestBehavior.opaque,
       child: Card(
           shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.only(bottomRight: Radius.circular(30.0))
+            borderRadius: BorderRadius.all(Radius.circular(15.0)),
           ),
           margin: EdgeInsets.symmetric(vertical: 2.0, horizontal: 0.0),
           elevation: 3.0,
