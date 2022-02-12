@@ -38,26 +38,22 @@ class _ExpandableCard extends State<ExpandableCard> {
       },
       behavior: HitTestBehavior.opaque,
       child: Card(
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(15.0)),
-          ),
-          margin: EdgeInsets.symmetric(vertical: 2.0, horizontal: 0.0),
-          elevation: 3.0,
-
-          child: Column(
-            children: <Widget>[
-              AnimatedContainer(
-                duration: Duration(milliseconds: 200),
-                width: double.infinity,
-                height: _height,
-                decoration: BoxDecoration (
-                  borderRadius: BorderRadius.all(Radius.circular(15.0)),
-                  color: _color,
-                ),
-              ),
-            ],
-          ),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(15.0)),
         ),
+        margin: EdgeInsets.symmetric(vertical: 2.0, horizontal: 0.0),
+        elevation: 3.0,
+        child: AnimatedContainer(
+          duration: Duration(milliseconds: 200),
+          width: double.infinity,
+          height: _height,
+          decoration: BoxDecoration (
+            borderRadius: BorderRadius.all(Radius.circular(15.0)),
+            color: _color,
+          ),
+          child: Image.asset('images/sample.png', fit: BoxFit.contain, height: _height,),
+        ),
+      ),
     );
   }
 }
