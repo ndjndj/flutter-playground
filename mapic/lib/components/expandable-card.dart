@@ -30,14 +30,6 @@ class _ExpandableCard extends State<ExpandableCard> {
 
 
   Widget build(BuildContext context) {
-    int? index = widget.index;
-
-    void setIndex(int newIndex) {
-      setState(() {
-        index = newIndex;
-      });
-    }
-
     return GestureDetector(
       onTap: () async {
         print('ontap');
