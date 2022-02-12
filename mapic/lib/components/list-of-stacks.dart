@@ -7,42 +7,14 @@ class ListOfStacks extends StatefulWidget {
 }
 
 class _ListOfStacks extends State<ListOfStacks> {
+  int cardList = 3;
 
-   List<Widget> cardList = <Widget>[
-    Positioned(
-      top: 300.0,
-      left: 0.0,
-      right: 0.0,
-      child: ExpandableCard(index: 0))
-    ,
-    Positioned(
-      top: 150.0,
-      left: 0.0,
-      right: 0.0,
-      child: ExpandableCard(index: 1))
-    ,
-    Positioned(
-      top: 0.0,
-      left: 0.0,
-      right: 0.0,
-      child: ExpandableCard(index: 2))
-    ,
-  ];
-
-  //call from expandable-card
-  void detectSelectedIndex(index) async {
-    setState(() {
-      //init
-
-    });
-
-  }
 
   @override
   Widget build(BuildContext context) {
     //final indexKey = GlobalObjectKey<ExpandableCard>(context);
     return ListView.builder(
-      itemCount: cardList.length,
+      itemCount: 3,
       itemBuilder: (context, index) {
         return ExpandableCard();
       }
