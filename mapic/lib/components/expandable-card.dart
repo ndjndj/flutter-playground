@@ -66,10 +66,8 @@ class _ExpandableCard extends State<ExpandableCard> {
               left: 10.0,
               right: 10.0,
               bottom: 0.0,
-              child: Text("ssss")
+              child: Text("2022/02/02")
             ),
-            Text("ssss"),
-            Text("ssss"),
           ],
         ),
       ),
