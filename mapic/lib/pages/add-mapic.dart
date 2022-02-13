@@ -50,91 +50,93 @@ class _AddMapic extends State<AddMapic> {
       ),
       body: Container(
         padding: EdgeInsets.symmetric(vertical: 16, horizontal: 64),
-        child: Column(
-          children: <Widget>[
-            _image != null
-              ? ClipRRect(child:
-                  Image.file(
-                    _image!,
+        child: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              _image != null
+                ? ClipRRect(child:
+                    Image.file(
+                      _image!,
+                      width: 280,
+                      height: 280,
+                      fit: BoxFit.cover,
+                    ),
+                    borderRadius: BorderRadius.circular(15.0),
+                  )
+                : Container(
                     width: 280,
                     height: 280,
-                    fit: BoxFit.cover,
-                  ),
-                  borderRadius: BorderRadius.circular(15.0),
-                )
-              : Container(
-                  width: 280,
-                  height: 280,
-                  child: Card(
-                    child: InkWell(
-                      onTap: getImage,
-                      child:Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          Icon(Icons.add_a_photo, size: 36),
-                          Text('add a photo'),
-                        ],
+                    child: Card(
+                      child: InkWell(
+                        onTap: getImage,
+                        child:Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Icon(Icons.add_a_photo, size: 36),
+                            Text('add a photo'),
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-              ),
-              Row(children: <Widget>[
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    primary: Colors.teal
-                  ),
-                  onPressed: _addSnapshot,
-                  child: Text('save', style: TextStyle(color: Colors.white))
                 ),
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    primary: Colors.teal
+                Row(children: <Widget>[
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.teal
+                    ),
+                    onPressed: _addSnapshot,
+                    child: Text('save', style: TextStyle(color: Colors.white))
                   ),
-                  onPressed: _addSnapshot,
-                  child: Text('save', style: TextStyle(color: Colors.white))
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.teal
+                    ),
+                    onPressed: _addSnapshot,
+                    child: Text('save', style: TextStyle(color: Colors.white))
+                  ),
+              ]),
+              TextField(
+                controller: _placeController,
+                decoration: InputDecoration(
+                  labelText: 'place name',
+                  labelStyle: TextStyle(fontSize: 12),
+                  hintText: 'lol',
                 ),
-            ]),
-            TextField(
-              controller: _placeController,
-              decoration: InputDecoration(
-                labelText: 'place name',
-                labelStyle: TextStyle(fontSize: 12),
-                hintText: 'lol',
+
+              ),
+              TextField(
+                controller: _addressController,
+                decoration: InputDecoration(
+                  labelText: 'address',
+                  labelStyle: TextStyle(fontSize: 12),
+                  hintText: 'Arctic',
+                  suffixIcon: IconButton(
+                        icon: Icon(Icons.place),
+                        onPressed: () async {
+                          final address = await Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context) {
+                              return MapSample();
+                            })
+                          );
+                          if (address != null) {
+                            setState(() {_addressController.text = address['address'];});
+                          }
+                        },
+                    ),
+                ),
+
+              ),
+              SizedBox(height: 15),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.teal
+                ),
+                onPressed: _addSnapshot,
+                child: Text('save', style: TextStyle(color: Colors.white))
               ),
 
-            ),
-            TextField(
-              controller: _addressController,
-              decoration: InputDecoration(
-                labelText: 'address',
-                labelStyle: TextStyle(fontSize: 12),
-                hintText: 'Arctic',
-                suffixIcon: IconButton(
-                      icon: Icon(Icons.place),
-                      onPressed: () async {
-                        final address = await Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) {
-                            return MapSample();
-                          })
-                        );
-                        if (address != null) {
-                          setState(() {_addressController.text = address['address'];});
-                        }
-                      },
-                  ),
-              ),
-
-            ),
-            SizedBox(height: 15),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                primary: Colors.teal
-              ),
-              onPressed: _addSnapshot,
-              child: Text('save', style: TextStyle(color: Colors.white))
-            ),
-
-          ]
+            ]
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
