@@ -45,6 +45,8 @@ class _AddMapic extends State<AddMapic> {
       setState(() {
         this._image = File(pickedFile.path);
       });
+    } on PlatformException catch(e) {
+      print('failed to pick image $e');
     }
   }
 /*
