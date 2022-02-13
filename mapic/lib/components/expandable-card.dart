@@ -11,7 +11,7 @@ class ExpandableCard extends StatefulWidget {
 }
 
 class _ExpandableCard extends State<ExpandableCard> {
-  double _height = 100;
+  double _height = 90;
   Color _color = Colors.white;
   double _opacity = 0.2;
   double _headOpacity = 0.2;
@@ -20,7 +20,7 @@ class _ExpandableCard extends State<ExpandableCard> {
   @override
   void initState() {
     isOpened = false;
-    _height = 100;
+    _height = 90;
     _color = Colors.white;
     _opacity = 0.2;
     _headOpacity = 0.2;
@@ -29,7 +29,7 @@ class _ExpandableCard extends State<ExpandableCard> {
   _handleTap() {
     setState(() {
       isOpened ? isOpened = false : isOpened = true;
-      isOpened ? _height = 500 : _height = 100;
+      isOpened ? _height = 500 : _height = 90;
       isOpened ? _opacity = 1.0 : _opacity = 0.2;
       isOpened ? _headOpacity = 1.0 : _headOpacity = 0.2;
     });
@@ -70,7 +70,7 @@ class _ExpandableCard extends State<ExpandableCard> {
             ),
             Container(
               width: double.infinity,
-              height: 90,
+              height: 80,
               decoration: BoxDecoration(
                 color: Colors.white.withOpacity(_headOpacity)
               ),
@@ -106,7 +106,7 @@ class _ExpandableCard extends State<ExpandableCard> {
             ),
             Positioned(
               right: 90.0,
-              top: 55.0,
+              top: 50.0,
               child: IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.book),
@@ -116,7 +116,7 @@ class _ExpandableCard extends State<ExpandableCard> {
             ),
             Positioned(
               right: 60.0,
-              top: 55.0,
+              top: 50.0,
               child: IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.edit),
@@ -125,7 +125,7 @@ class _ExpandableCard extends State<ExpandableCard> {
             ),
             Positioned(
               right: 30.0,
-              top: 55.0,
+              top: 50.0,
               child: IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.share),
@@ -134,7 +134,7 @@ class _ExpandableCard extends State<ExpandableCard> {
             ),
             Positioned(
               right: 0.0,
-              top: 55.0,
+              top: 50.0,
               child: IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.delete),
