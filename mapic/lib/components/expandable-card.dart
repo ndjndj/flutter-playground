@@ -94,12 +94,11 @@ class _ExpandableCard extends State<ExpandableCard> {
               left: 100.0,
               right: 10.0,
               bottom: 10.0,
-              child: Text(
-                "東京都　練馬区　関町一丁目付近",
-                style: TextStyle(
-                  fontSize: 18.0,
-                  decoration: TextDecoration.underline
-                ),
+              child: IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.book),
+                iconSize: 64,
+                
               ),
             ),
           ],
