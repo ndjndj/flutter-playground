@@ -70,7 +70,7 @@ class _ExpandableCard extends State<ExpandableCard> {
             ),
             Container(
               width: double.infinity,
-              height: 80,
+              height: 85,
               decoration: BoxDecoration(
                 color: Colors.white.withOpacity(_headOpacity)
               ),
@@ -106,7 +106,7 @@ class _ExpandableCard extends State<ExpandableCard> {
             ),
             Positioned(
               right: 90.0,
-              top: 50.0,
+              top: 45.0,
               child: IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.book),
@@ -116,7 +116,7 @@ class _ExpandableCard extends State<ExpandableCard> {
             ),
             Positioned(
               right: 60.0,
-              top: 50.0,
+              top: 45.0,
               child: IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.edit),
@@ -125,7 +125,7 @@ class _ExpandableCard extends State<ExpandableCard> {
             ),
             Positioned(
               right: 30.0,
-              top: 50.0,
+              top: 45.0,
               child: IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.share),
@@ -134,7 +134,7 @@ class _ExpandableCard extends State<ExpandableCard> {
             ),
             Positioned(
               right: 0.0,
-              top: 50.0,
+              top: 45.0,
               child: IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.delete),
