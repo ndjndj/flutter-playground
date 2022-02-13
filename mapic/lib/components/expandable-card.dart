@@ -66,7 +66,7 @@ class _ExpandableCard extends State<ExpandableCard> {
             ),
             Container(
               width: double.infinity,
-              height: 110,
+              height: 90,
               decoration: BoxDecoration(
                 color: Colors.red.withOpacity(0.2)
               ),
