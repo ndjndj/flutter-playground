@@ -72,7 +72,20 @@ class _ExpandableCard extends State<ExpandableCard> {
               child: Text(
                 "2022/02/02",
                 style: TextStyle(
-                  fontSize: 24.0,
+                  fontSize: 16.0,
+                  decoration: TextDecoration.underline
+                ),
+              ),
+            ),
+            Positioned(
+              top: 65.0,
+              left: 10.0,
+              right: 10.0,
+              bottom: 0.0,
+              child: Text(
+                "東京都　練馬区　関町一丁目付近",
+                style: TextStyle(
+                  fontSize: 18.0,
                   decoration: TextDecoration.underline
                 ),
               ),
