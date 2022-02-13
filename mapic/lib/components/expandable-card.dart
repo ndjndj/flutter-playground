@@ -13,9 +13,11 @@ class _ExpandableCard extends State<ExpandableCard> {
   double _height = 200;
   Color _color = Colors.white;
   double _opacity = 0.2;
+  bool isOpened = false;
 
   @override
   void initState() {
+    isOpened = isOpened == true ? isOpened = false : isOpened = true;
     _height = 200;
     _color = Colors.white;
     _opacity = 0.2;
