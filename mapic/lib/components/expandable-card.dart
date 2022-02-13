@@ -21,7 +21,7 @@ class _ExpandableCard extends State<ExpandableCard> {
 
   _handleTap() {
     setState(() {
-      _height == 400 ? _height = 200 : _height = 400;
+      _height == 600 ? _height = 200 : _height = 600;
       _color == Colors.blue ? _color = Colors.red : _color =  Colors.blue;
     });
 
@@ -53,7 +53,7 @@ class _ExpandableCard extends State<ExpandableCard> {
                 borderRadius: BorderRadius.all(Radius.circular(15.0)),
                 color: _color,
               ),
-              child: Image.asset('images/sample.png', fit: BoxFit.fitHeight),
+              child: Image.asset('images/sample2.png', fit: BoxFit.fitWidth),
             ),
             Text("ssss"),
             Text("ssss"),
