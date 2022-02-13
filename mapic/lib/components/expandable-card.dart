@@ -129,7 +129,7 @@ class _ExpandableCard extends State<ExpandableCard> {
               bottom: 10.0,
               child: IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.share),
+                icon: Icon(Icons.delete),
                 iconSize: 64,
 
               ),
