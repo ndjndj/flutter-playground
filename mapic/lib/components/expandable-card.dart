@@ -11,18 +11,17 @@ class ExpandableCard extends StatefulWidget {
 
 class _ExpandableCard extends State<ExpandableCard> {
   double _height = 200;
-  Color _color = Colors.blue;
+  Color _color = Colors.white;
 
   @override
   void initState() {
     _height = 200;
-    _color = Colors.blue;
+    _color = Colors.white;
   }
 
   _handleTap() {
     setState(() {
       _height == 600 ? _height = 200 : _height = 600;
-      _color == Colors.blue ? _color = Colors.red : _color =  Colors.blue;
     });
 
   }
@@ -54,12 +53,18 @@ class _ExpandableCard extends State<ExpandableCard> {
                 color: _color,
                 image: DecorationImage(
                   image: Image.asset('images/sample2.png').image,
-                  fit: BoxFit.fitWidth
-
+                  fit: BoxFit.fitWidth,
+                  opacity: 0.2
                 ),
               ),
             ),
-            Text("ssss"),
+            Positioned(
+              top: 20.0,
+              left: 10.0,
+              right: 10.0,
+              bottom: 0.0,
+              child: Text("ssss")
+            ),
             Text("ssss"),
             Text("ssss"),
           ],
