@@ -49,14 +49,15 @@ class _AddMapic extends State<AddMapic> {
       print('failed to pick image $e');
     }
   }
-/*
+
   void _takePhoto() async {
     if ( this._image == null ) return;
 
-    await GallerySaver.saveImage( this._imagePath!).then((String path) {
-      print(path);
+    await GallerySaver.saveImage( this._imagePath!).then((bool? res) {
+      print(res);
+      print(this._imagePath);
     });
-  }*/
+  }
 
   Future<void> _addSnapshot() async {
     await SnapShot.createSnapshot(_placeController.text, null, null, null, null);
@@ -153,7 +154,7 @@ class _AddMapic extends State<AddMapic> {
                 style: ElevatedButton.styleFrom(
                   primary: Colors.teal
                 ),
-                onPressed: _addSnapshot,
+                onPressed: _takePhoto,
                 child: Text('save', style: TextStyle(color: Colors.white))
               ),
 
