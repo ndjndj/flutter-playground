@@ -44,6 +44,7 @@ class _AddMapic extends State<AddMapic> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         title: Text('AddMapic')
       ),
@@ -132,6 +133,7 @@ class _AddMapic extends State<AddMapic> {
               onPressed: _addSnapshot,
               child: Text('save', style: TextStyle(color: Colors.white))
             ),
+
           ]
         ),
       ),
