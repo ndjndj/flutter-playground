@@ -36,17 +36,25 @@ class _AddMapic extends State<AddMapic> {
     }
 
   }
+  Future getImageFromGallery() async {
+    try {
+      final pickedFile = await picker.pickImage(source: ImageSource.gallery);
 
+      if (pickedFile == null) return;
+
+      setState(() {
+        this._image = File(pickedFile.path);
+      });
+    }
+  }
+/*
   void _takePhoto() async {
     if ( this._image == null ) return;
 
-    GallerySaver.saveImage( this._imagePath!)
-      .then((String path)
-        {
-          print(path);
-        }
-      );
-  }
+    await GallerySaver.saveImage( this._imagePath!).then((String path) {
+      print(path);
+    });
+  }*/
 
   Future<void> _addSnapshot() async {
     await SnapShot.createSnapshot(_placeController.text, null, null, null, null);
