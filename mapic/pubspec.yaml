@@ -42,7 +42,7 @@ dependencies:
   location: any
   geocoding: any
   geolocator: ^7.2.0+1
-  google_fonts: 
+  google_fonts: ^2.1.0
 
 dev_dependencies:
   flutter_test:
