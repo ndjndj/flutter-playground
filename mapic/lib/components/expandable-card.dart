@@ -12,7 +12,7 @@ class ExpandableCard extends StatefulWidget {
 class _ExpandableCard extends State<ExpandableCard> {
   double _height = 100;
   Color _color = Colors.white;
-  double _opacity = 1.0;
+  double _opacity = 0.2;
   bool isOpened = false;
 
   @override
@@ -20,14 +20,14 @@ class _ExpandableCard extends State<ExpandableCard> {
     isOpened = false;
     _height = 100;
     _color = Colors.white;
-    _opacity = 1.0;
+    _opacity = 0.2;
   }
 
   _handleTap() {
     setState(() {
       isOpened = isOpened == true ? isOpened = false : isOpened = true;
-      isOpened ? _height = 100 : _height = 500;
-      isOpened ? _opacity = 0.2 : _opacity = 1.0;
+      isOpened ? _height = 500 : _height = 100;
+      isOpened ? _opacity = 1.0 : _opacity = 0.2;
     });
 
   }
