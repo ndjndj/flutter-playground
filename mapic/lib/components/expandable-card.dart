@@ -25,7 +25,7 @@ class _ExpandableCard extends State<ExpandableCard> {
 
   _handleTap() {
     setState(() {
-      isOpened = isOpened == true ? isOpened = false : isOpened = true;
+      isOpened ? isOpened = false : isOpened = true;
       isOpened ? _height = 500 : _height = 100;
       isOpened ? _opacity = 1.0 : _opacity = 0.2;
     });
@@ -65,9 +65,9 @@ class _ExpandableCard extends State<ExpandableCard> {
               ),
             ),
             Container(
-              color: Colors.red,
               width: double.infinity,
               height: 100,
+
 
             ),
             Positioned(
