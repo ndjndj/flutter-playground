@@ -64,6 +64,12 @@ class _ExpandableCard extends State<ExpandableCard> {
                 ),
               ),
             ),
+            Container(
+              color: Colors.red,
+              width: double.infinity,
+              height: 100,
+
+            ),
             Positioned(
               top: 20.0,
               left: 10.0,
@@ -131,7 +137,6 @@ class _ExpandableCard extends State<ExpandableCard> {
                 onPressed: () {},
                 icon: Icon(Icons.delete),
                 iconSize: 64,
-
               ),
             ),
           ],
