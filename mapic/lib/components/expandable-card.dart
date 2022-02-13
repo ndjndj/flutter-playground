@@ -57,7 +57,7 @@ class _ExpandableCard extends State<ExpandableCard> {
                 image: DecorationImage(
                   image: Image.asset('images/sample2.png').image,
                   fit: BoxFit.fitWidth,
-                  opacity: 0.2
+                  opacity: _opacity
                 ),
               ),
             ),
