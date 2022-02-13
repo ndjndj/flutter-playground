@@ -38,7 +38,7 @@ class _AddMapic extends State<AddMapic> {
   }
 
   void _takePhoto() async {
-    if ( this._image == null ) { return; }
+    if ( this._image == null ) return;
 
     GallerySaver.saveImage( this._imagePath!)
       .then((String path)
