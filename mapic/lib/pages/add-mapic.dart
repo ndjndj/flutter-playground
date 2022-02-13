@@ -17,6 +17,7 @@ class _AddMapic extends State<AddMapic> {
   var _placeController = TextEditingController();
 
   File? _image;
+  XFile? _imageTmp;
 
   final picker = ImagePicker();
 
@@ -31,10 +32,15 @@ class _AddMapic extends State<AddMapic> {
 
       setState(() {
         this._image = imageTmp;
+        this._imageTmp = pickedFile;
       });
     } on PlatformException catch(e) {
       print('failed to pick image $e');
     }
+
+  }
+
+  void _takePhoto() async {
 
   }
 
