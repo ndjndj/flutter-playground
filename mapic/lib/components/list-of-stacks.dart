@@ -7,14 +7,14 @@ class ListOfStacks extends StatefulWidget {
 }
 
 class _ListOfStacks extends State<ListOfStacks> {
-  int cardList = 3;
+  int cardList = 6;
 
 
   @override
   Widget build(BuildContext context) {
     //final indexKey = GlobalObjectKey<ExpandableCard>(context);
     return ListView.builder(
-      itemCount: 3,
+      itemCount: 6,
       itemBuilder: (context, index) {
         return ExpandableCard();
       }
