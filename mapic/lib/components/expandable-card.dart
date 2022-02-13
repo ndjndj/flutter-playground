@@ -121,7 +121,7 @@ class _ExpandableCard extends State<ExpandableCard> {
             ),
             Positioned(
               left: 100.0,
-              right: 10.0,
+              right: 5.0,
               bottom: 10.0,
               child: IconButton(
                 onPressed: () {},
@@ -130,9 +130,8 @@ class _ExpandableCard extends State<ExpandableCard> {
               ),
             ),
             Positioned(
-              left: 100.0,
-              right: 10.0,
-              bottom: 10.0,
+              right: 0.0,
+              top: 50.0,
               child: IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.delete),
