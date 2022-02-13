@@ -96,7 +96,7 @@ class _ExpandableCard extends State<ExpandableCard> {
               bottom: 0.0,
               child: Text(
                 "東京都　練馬区　関町一丁目付近",
-                style: GoogleFonts.yuseiMagic(
+                style: GoogleFonts.rocknRollOne(
                   textStyle: TextStyle(
                     fontSize: 18.0,
                     decoration: TextDecoration.underline,
