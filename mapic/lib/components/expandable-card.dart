@@ -110,8 +110,7 @@ class _ExpandableCard extends State<ExpandableCard> {
               ),
             ),
             Positioned(
-              left: 100.0,
-              right: 10.0,
+              right: 60.0,
               top: 50.0,
               child: IconButton(
                 onPressed: () {},
