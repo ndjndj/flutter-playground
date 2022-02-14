@@ -2,10 +2,13 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
 import 'package:image_picker/image_picker.dart';
 import 'package:gallery_saver/gallery_saver.dart';
+import 'package:path/path.dart';
 import '../db/snapshot.dart';
 import './map-sample.dart';
+
 
 class AddMapic extends StatefulWidget {
   @override
@@ -56,6 +59,7 @@ class _AddMapic extends State<AddMapic> {
     await GallerySaver.saveImage( this._imagePath!).then((bool? res) {
       print(res);
       print(this._imagePath);
+      print(basename(this._imagePath!) );
     });
   }
 
