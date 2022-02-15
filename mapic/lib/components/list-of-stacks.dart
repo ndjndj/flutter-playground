@@ -32,7 +32,8 @@ class _ListOfStacks extends State<ListOfStacks> {
       itemCount: addressList.length,
       itemBuilder: (context, index) {
         return ExpandableCard(
-
+          address: addressList[index]['address'],
+          imageName: addressList[index]['imageName'],
         );
       }
     );
