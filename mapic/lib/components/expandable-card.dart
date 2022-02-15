@@ -18,8 +18,8 @@ class _ExpandableCard extends State<ExpandableCard> {
   double _opacity = 0.2;
   double _headOpacity = 0.2;
   bool isOpened = false;
-  String _imageNameFullPath = '';
-  String _docPath = '';
+  File? _image;
+
 
   @override
   void initState() async {
@@ -29,8 +29,8 @@ class _ExpandableCard extends State<ExpandableCard> {
     _opacity = 0.2;
     _headOpacity = 0.2;
 
-    _docPath = await _localPath;
-    _imageNameFullPath = _docPath + '/' + widget.imageName;
+    String docPath = await _localPath;
+    _image = File(docPath + '/' + widget.imageName);
   }
 
   Future<String> get _localPath async {
