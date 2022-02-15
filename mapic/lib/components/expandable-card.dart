@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../components/inherited-wrapper.dart';
 
 class ExpandableCard extends StatefulWidget {
   final String address;
@@ -18,6 +17,7 @@ class _ExpandableCard extends State<ExpandableCard> {
   double _opacity = 0.2;
   double _headOpacity = 0.2;
   bool isOpened = false;
+  String _imageNameFullPath = '';
 
   @override
   void initState() {
@@ -26,6 +26,12 @@ class _ExpandableCard extends State<ExpandableCard> {
     _color = Colors.white;
     _opacity = 0.2;
     _headOpacity = 0.2;
+
+
+  }
+
+  String getImageNameFullpath() {
+    return '';
   }
 
   _handleTap() {
