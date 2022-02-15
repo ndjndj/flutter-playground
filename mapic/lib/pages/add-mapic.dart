@@ -21,6 +21,7 @@ class _AddMapic extends State<AddMapic> {
 
   File? _image;
   String? _imagePath;
+  String? _imageName;
 
   final picker = ImagePicker();
 
@@ -57,14 +58,23 @@ class _AddMapic extends State<AddMapic> {
     if ( this._image == null ) return;
 
     await GallerySaver.saveImage( this._imagePath!).then((bool? res) {
-      print(res);
-      print(this._imagePath);
+
       print(basename(this._imagePath!) );
+      setState(() {
+        _imageName = basename(this._imagePath!);
+      });
     });
   }
 
   Future<void> _addSnapshot() async {
-    await SnapShot.createSnapshot(_placeController.text, null, null, null, null);
+    await SnapShot.createSnapshot(
+      _placeController.text,
+      null,
+      null,
+      null,
+      null,
+      null
+    );
 
   }
 
