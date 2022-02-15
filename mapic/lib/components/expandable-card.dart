@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:path_provider/path_provider.dart';
 class ExpandableCard extends StatefulWidget {
-  final String address;
+  final String place;
   final String imageName;
 
-  ExpandableCard({required this.address, required this.imageName});
+  ExpandableCard({required this.place, required this.imageName});
 
   @override
   _ExpandableCard createState() => _ExpandableCard();
@@ -107,7 +107,7 @@ class _ExpandableCard extends State<ExpandableCard> {
               right: 10.0,
               bottom: 0.0,
               child: Text(
-                "東京都　練馬区　関町一丁目付近",
+                widget.place,
                 style: GoogleFonts.rocknRollOne(
                   textStyle: TextStyle(
                     fontSize: 18.0,
