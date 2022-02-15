@@ -18,7 +18,7 @@ class _ExpandableCard extends State<ExpandableCard> {
   double _opacity = 0.2;
   double _headOpacity = 0.2;
   bool isOpened = false;
-  File? _image;
+  String _imagePath = '';
 
 
   @override
@@ -30,7 +30,7 @@ class _ExpandableCard extends State<ExpandableCard> {
     _headOpacity = 0.2;
 
     String docPath = await _localPath;
-    _image = File(docPath + '/' + widget.imageName);
+    _imagePath = docPath + '/' + widget.imageName;
   }
 
   Future<String> get _localPath async {
@@ -74,7 +74,7 @@ class _ExpandableCard extends State<ExpandableCard> {
                 borderRadius: BorderRadius.all(Radius.circular(15.0)),
                 color: _color,
                 image: DecorationImage(
-                  image: Image.asset('').image,
+                  image: Image.asset().image,
                   fit: BoxFit.fitWidth,
                   opacity: _opacity
                 ),
