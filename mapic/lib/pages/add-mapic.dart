@@ -54,7 +54,7 @@ class _AddMapic extends State<AddMapic> {
     }
   }
 
-  void _takePhoto() async {
+  Future<void> _takePhoto() async {
     if ( this._image == null ) return;
 
     await GallerySaver.saveImage( this._imagePath!).then((bool? res) {
@@ -67,6 +67,8 @@ class _AddMapic extends State<AddMapic> {
   }
 
   Future<void> _addSnapshot() async {
+    await _takePhoto();
+
     if (_imageName == null) return;
 
     await SnapShot.createSnapshot(
