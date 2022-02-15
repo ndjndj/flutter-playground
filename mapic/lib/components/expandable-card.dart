@@ -29,9 +29,9 @@ class _ExpandableCard extends State<ExpandableCard> {
     _opacity = 0.2;
     _headOpacity = 0.2;
 
-    //String docPath = await _localPath;
-    //_imagePath = docPath + '/' + widget.imageName;
-
+    String docPath = await _localPath;
+    _imagePath = docPath + '/' + widget.imageName;
+    print('initstate');
     print(widget.place);
     print(widget.imageName);
   }
