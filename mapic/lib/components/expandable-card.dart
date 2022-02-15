@@ -22,23 +22,26 @@ class _ExpandableCard extends State<ExpandableCard> {
 
 
   @override
-  void initState() async {
+  void initState() {
     isOpened = false;
     _height = 90;
     _color = Colors.white;
     _opacity = 0.2;
     _headOpacity = 0.2;
 
-    String docPath = await _localPath;
-    _imagePath = docPath + '/' + widget.imageName;
+    _localPath();
+
     print('initstate');
     print(widget.place);
     print(widget.imageName);
+    print(_imagePath);
   }
 
-  Future<String> get _localPath async {
+  void _localPath() async {
     Directory appDocDir = await getApplicationDocumentsDirectory();
-    return appDocDir.path;
+    setState(() {
+      _imagePath = appDocDir.path + '/' + widget.imageName;
+    });
   }
 
   _handleTap() {
