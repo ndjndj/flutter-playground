@@ -40,12 +40,12 @@ class SnapShot {
 
   static Future<int> updateSnapshot(
     int id,
-    String? place,
-    String? imageName,
-    String? address,
-    String? description,
-    double? latitude,
-    double? longtitude) async {
+    String place,
+    String imageName,
+    String address,
+    String description,
+    double latitude,
+    double longtitude) async {
       final database = await db.DB.db();
 
       final data = {
