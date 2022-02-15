@@ -6,7 +6,7 @@ class ExpandableCard extends StatefulWidget {
   final String address;
   final String imageName;
 
-  ExpandableCard({required this.address, required this.imageName})
+  ExpandableCard({required this.address, required this.imageName});
 
   @override
   _ExpandableCard createState() => _ExpandableCard();
