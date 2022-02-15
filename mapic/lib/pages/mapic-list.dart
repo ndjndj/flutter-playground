@@ -12,20 +12,7 @@ class MapicList extends StatefulWidget {
 }
 
 class _MapicList extends State<MapicList> {
-  List<Map<String, dynamic>> addressList = [];
-
-  @override
-  void initState() {
-    super.initState();
-    _refresh();
-  }
-
-  void _refresh() async {
-    final data = await SnapShot.getSnapshots();
-    setState(() {
-      addressList = data;
-    });
-  }
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
