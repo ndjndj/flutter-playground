@@ -33,7 +33,7 @@ class _ListOfStacks extends State<ListOfStacks> {
       itemBuilder: (context, index) {
         return ExpandableCard(
           place: addressList[index]['place'],
-          imageName: addressList[index]['imageName'],
+          imageName: addressList[index]['imagename'],
         );
       }
     );

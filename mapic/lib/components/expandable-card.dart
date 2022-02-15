@@ -29,8 +29,11 @@ class _ExpandableCard extends State<ExpandableCard> {
     _opacity = 0.2;
     _headOpacity = 0.2;
 
-    String docPath = await _localPath;
-    _imagePath = docPath + '/' + widget.imageName;
+    //String docPath = await _localPath;
+    //_imagePath = docPath + '/' + widget.imageName;
+
+    print(widget.place);
+    print(widget.imageName);
   }
 
   Future<String> get _localPath async {
@@ -74,7 +77,7 @@ class _ExpandableCard extends State<ExpandableCard> {
                 borderRadius: BorderRadius.all(Radius.circular(15.0)),
                 color: _color,
                 image: DecorationImage(
-                  image: Image.asset(_imagePath).image,
+                  image: Image.asset('images/sample2.png').image,
                   fit: BoxFit.fitWidth,
                   opacity: _opacity
                 ),
@@ -107,7 +110,7 @@ class _ExpandableCard extends State<ExpandableCard> {
               right: 10.0,
               bottom: 0.0,
               child: Text(
-                widget.place,
+                'a',
                 style: GoogleFonts.rocknRollOne(
                   textStyle: TextStyle(
                     fontSize: 18.0,
