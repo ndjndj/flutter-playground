@@ -30,12 +30,10 @@ class _ListOfStacks extends State<ListOfStacks> {
     //final indexKey = GlobalObjectKey<ExpandableCard>(context);
     return ListView.builder(
       itemCount: addressList.length,
-      itemBuilder: (context, index) {
-        return ExpandableCard(
-          place: addressList[index]['place'],
-          imageName: addressList[index]['imagename'],
-        );
-      }
+      itemBuilder: (context, index) => ExpandableCard(
+        place: addressList[index]['place'],
+        imageName: addressList[index]['imagename'],
+      ),
     );
   }
 }
