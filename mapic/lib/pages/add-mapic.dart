@@ -77,7 +77,6 @@ class _AddMapic extends State<AddMapic> {
       null,
       null
     );
-
   }
 
   @override
