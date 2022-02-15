@@ -10,6 +10,7 @@ class DB {
         id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
         address TEXT,
         place TEXT,
+        imagename TEXT,
         description TEXT,
         latitude REAL,
         longtitude REAL,
@@ -25,7 +26,7 @@ class DB {
     final path = join(directory.path, 'mapic.db');
 
     //DB削除
-    //await sql.deleteDatabase(path);
+    await sql.deleteDatabase(path);
 
     return sql.openDatabase(
       path,
