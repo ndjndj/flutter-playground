@@ -6,15 +6,17 @@ import './db.dart' as db;
 class SnapShot {
   static Future<int> createSnapshot(
     String place,
+    String imageName,
     String? address,
     String? description,
     double? latitude,
-    double? longtitude
+    double? longtitude,
   ) async {
     final database = await db.DB.db();
 
     final data = {
       'place': place,
+      'imageName': imageName,
       'address': address,
       'description': description,
       'latitude': latitude,
