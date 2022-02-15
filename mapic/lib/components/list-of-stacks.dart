@@ -29,9 +29,11 @@ class _ListOfStacks extends State<ListOfStacks> {
   Widget build(BuildContext context) {
     //final indexKey = GlobalObjectKey<ExpandableCard>(context);
     return ListView.builder(
-      itemCount: 6,
+      itemCount: addressList.length,
       itemBuilder: (context, index) {
-        return ExpandableCard();
+        return ExpandableCard(
+
+        );
       }
     );
   }
