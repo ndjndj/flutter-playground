@@ -74,7 +74,7 @@ class _ExpandableCard extends State<ExpandableCard> {
                 borderRadius: BorderRadius.all(Radius.circular(15.0)),
                 color: _color,
                 image: DecorationImage(
-                  image: Image.asset().image,
+                  image: Image.asset(_imagePath).image,
                   fit: BoxFit.fitWidth,
                   opacity: _opacity
                 ),
