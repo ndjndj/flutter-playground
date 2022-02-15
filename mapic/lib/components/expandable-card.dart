@@ -3,8 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../components/inherited-wrapper.dart';
 
 class ExpandableCard extends StatefulWidget {
-  ExpandableCard({Key? key, this.index}) : super(key: key);
-  final int? index;
+  ExpandableCard({Key? key}) : super(key: key);
 
   @override
   _ExpandableCard createState() => _ExpandableCard();

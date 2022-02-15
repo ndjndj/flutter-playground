@@ -9,7 +9,7 @@ class ListOfStacks extends StatefulWidget {
 class _ListOfStacks extends State<ListOfStacks> {
   int cardList = 6;
 
-List<Map<String, dynamic>> addressList = [];
+  List<Map<String, dynamic>> addressList = [];
 
   @override
   void initState() {
@@ -22,7 +22,9 @@ List<Map<String, dynamic>> addressList = [];
     setState(() {
       addressList = data;
     });
+    print(addressList);
   }
+
   @override
   Widget build(BuildContext context) {
     //final indexKey = GlobalObjectKey<ExpandableCard>(context);
