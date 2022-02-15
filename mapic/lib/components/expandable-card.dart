@@ -31,9 +31,9 @@ class _ExpandableCard extends State<ExpandableCard> {
 
   }
 
-  Future<String> getImageNameFullpath() async {
+  Future<String> get _localPath() async {
     Directory appDocDir = await getApplicationDocumentsDirectory();
-    return '';
+    return appDocDir.path;
   }
 
   _handleTap() {
