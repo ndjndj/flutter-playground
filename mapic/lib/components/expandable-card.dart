@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:path_provider/path_provider.dart';
@@ -30,8 +31,8 @@ class _ExpandableCard extends State<ExpandableCard> {
 
   }
 
-  String getImageNameFullpath() {
-    
+  String getImageNameFullpath() async {
+    Directory appDocDir = await getApplicationDocumentsDirectory();
     return '';
   }
 
