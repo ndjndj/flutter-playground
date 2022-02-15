@@ -67,9 +67,11 @@ class _AddMapic extends State<AddMapic> {
   }
 
   Future<void> _addSnapshot() async {
+    if (_imageName == null) return;
+
     await SnapShot.createSnapshot(
       _placeController.text,
-      null,
+      _imageName!,
       null,
       null,
       null,
