@@ -40,7 +40,8 @@ class SnapShot {
 
   static Future<int> updateSnapshot(
     int id,
-    String place,
+    String? place,
+    String? imageName,
     String? address,
     String? description,
     double? latitude,
@@ -49,6 +50,7 @@ class SnapShot {
 
       final data = {
         'place': place,
+        'imageName': imageName,
         'address': address,
         'description': description,
         'latitude': latitude,
