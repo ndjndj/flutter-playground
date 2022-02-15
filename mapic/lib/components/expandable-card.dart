@@ -19,16 +19,17 @@ class _ExpandableCard extends State<ExpandableCard> {
   double _headOpacity = 0.2;
   bool isOpened = false;
   String _imageNameFullPath = '';
+  String _docPath = '';
 
   @override
-  void initState() {
+  void initState() async {
     isOpened = false;
     _height = 90;
     _color = Colors.white;
     _opacity = 0.2;
     _headOpacity = 0.2;
 
-
+    _docPath = await _localPath;
   }
 
   Future<String> get _localPath async {
