@@ -69,7 +69,8 @@ class _AddMapic extends State<AddMapic> {
     final path = await localPath;
     final imagePath = '$path/$_imageName';
     File imageFile = File(imagePath);
-    
+    print("imagePath");
+    print(imagePath);
     await imageFile.writeAsBytes(await _image!.readAsBytes());
 
   }
