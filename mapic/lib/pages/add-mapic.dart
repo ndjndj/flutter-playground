@@ -62,12 +62,17 @@ class _AddMapic extends State<AddMapic> {
   Future<void> _takePhoto() async {
     if ( this._image == null ) return;
 
+    setState(() {
+        _imageName = basename(this._imagePath!);
+      });
+
+    final path = await localPath;
+    final imagePath = '$path/$_imageName';
+    
     await GallerySaver.saveImage( this._imagePath!).then((bool? res) {
 
       print(basename(this._imagePath!) );
-      setState(() {
-        _imageName = basename(this._imagePath!);
-      });
+
     });
   }
 
