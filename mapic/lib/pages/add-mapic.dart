@@ -69,10 +69,10 @@ class _AddMapic extends State<AddMapic> {
     final path = await localPath;
     final imagePath = '$path/$_imageName';
     File imageFile = File(imagePath);
+
+    await imageFile.writeAsBytes(await _image!.readAsBytes());
     print("imagePath");
     print(imagePath);
-    await imageFile.writeAsBytes(await _image!.readAsBytes());
-
   }
 
   Future<void> _addSnapshot() async {
