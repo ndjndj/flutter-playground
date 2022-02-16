@@ -57,6 +57,7 @@ class _AddMapic extends State<AddMapic> {
 
   static Future get localPath async {
     final directory = await getApplicationDocumentsDirectory();
+    return directory.path;
   }
   Future<void> _takePhoto() async {
     if ( this._image == null ) return;
