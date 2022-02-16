@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:gallery_saver/gallery_saver.dart';
 import 'package:path/path.dart';
+import 'package:path_provider/path_provider.dart';
 import '../db/snapshot.dart';
 import './map-sample.dart';
 
@@ -54,6 +55,9 @@ class _AddMapic extends State<AddMapic> {
     }
   }
 
+  static Future get localPath async {
+    final directory = await getApplicationDocumentsDirectory();
+  }
   Future<void> _takePhoto() async {
     if ( this._image == null ) return;
 

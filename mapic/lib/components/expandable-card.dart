@@ -39,6 +39,8 @@ class _ExpandableCard extends State<ExpandableCard> {
 
   void _localPath() async {
     Directory appDocDir = await getApplicationDocumentsDirectory();
+    print('appDocDir.path');
+    print(appDocDir.path);
     setState(() {
       _imagePath = appDocDir.path + '/' + widget.imageName;
     });
@@ -80,7 +82,7 @@ class _ExpandableCard extends State<ExpandableCard> {
                 borderRadius: BorderRadius.all(Radius.circular(15.0)),
                 color: _color,
                 image: DecorationImage(
-                  image: Image.asset('images/sample2.png').image,
+                  image: Image.asset('image/sample2.png').image,
                   fit: BoxFit.fitWidth,
                   opacity: _opacity
                 ),
