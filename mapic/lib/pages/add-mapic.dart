@@ -83,7 +83,7 @@ class _AddMapic extends State<AddMapic> {
     await SnapShot.createSnapshot(
       _placeController.text,
       _imageName!,
-      null,
+      _addressController.text,
       null,
       null,
       null
