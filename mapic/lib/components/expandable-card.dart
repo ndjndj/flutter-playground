@@ -141,7 +141,7 @@ class _ExpandableCard extends State<ExpandableCard> {
             ),
             Positioned(
               right: 90.0,
-              top: 45.0,
+              top: 65.0,
               child: IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.book),
@@ -151,7 +151,7 @@ class _ExpandableCard extends State<ExpandableCard> {
             ),
             Positioned(
               right: 60.0,
-              top: 45.0,
+              top: 65.0,
               child: IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.edit),
@@ -160,7 +160,7 @@ class _ExpandableCard extends State<ExpandableCard> {
             ),
             Positioned(
               right: 30.0,
-              top: 45.0,
+              top: 65.0,
               child: IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.share),
@@ -169,7 +169,7 @@ class _ExpandableCard extends State<ExpandableCard> {
             ),
             Positioned(
               right: 0.0,
-              top: 45.0,
+              top: 65.0,
               child: IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.delete),
