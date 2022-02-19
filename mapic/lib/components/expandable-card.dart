@@ -125,6 +125,21 @@ class _ExpandableCard extends State<ExpandableCard> {
               ),
             ),
             Positioned(
+              top: 50.0,
+              left: 10.0,
+              right: 10.0,
+              bottom: 0.0,
+              child: Text(
+                widget.place,
+                style: GoogleFonts.rocknRollOne(
+                  textStyle: TextStyle(
+                    fontSize: 18.0,
+                    decoration: TextDecoration.underline,
+                  ),
+                ),
+              ),
+            ),
+            Positioned(
               right: 90.0,
               top: 45.0,
               child: IconButton(
