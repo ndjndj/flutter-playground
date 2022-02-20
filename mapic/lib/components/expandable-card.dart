@@ -56,6 +56,9 @@ class _ExpandableCard extends State<ExpandableCard> {
 
   }
 
+  _edit() {
+    return;
+  }
   _delete() {
     return;
   }
