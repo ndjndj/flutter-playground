@@ -60,6 +60,10 @@ class _ExpandableCard extends State<ExpandableCard> {
     return;
   }
 
+  _addAlubum() {
+    return;
+  }
+
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () async {
