@@ -56,7 +56,9 @@ class _ExpandableCard extends State<ExpandableCard> {
 
   }
 
-
+  _delete() {
+    return;
+  }
 
   Widget build(BuildContext context) {
     return GestureDetector(
