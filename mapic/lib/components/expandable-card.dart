@@ -64,6 +64,10 @@ class _ExpandableCard extends State<ExpandableCard> {
     return;
   }
 
+  _share() {
+    return;
+  }
+
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () async {
