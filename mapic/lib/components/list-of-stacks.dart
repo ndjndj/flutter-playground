@@ -31,6 +31,7 @@ class _ListOfStacks extends State<ListOfStacks> {
     return ListView.builder(
       itemCount: addressList.length,
       itemBuilder: (context, index) => ExpandableCard(
+        id: addressList[index]['id'],
         place: addressList[index]['place'],
         imageName: addressList[index]['imagename'],
       ),
