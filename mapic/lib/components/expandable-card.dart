@@ -3,10 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:path_provider/path_provider.dart';
 class ExpandableCard extends StatefulWidget {
+  final int id;
   final String place;
   final String imageName;
 
-  ExpandableCard({required this.place, required this.imageName});
+  ExpandableCard({required this.id, required this.place, required this.imageName});
 
   @override
   _ExpandableCard createState() => _ExpandableCard();
