@@ -34,6 +34,7 @@ class _ListOfStacks extends State<ListOfStacks> {
         id: addressList[index]['id'],
         place: addressList[index]['place'],
         imageName: addressList[index]['imagename'],
+        reflesh: refresh,
       ),
     );
   }
