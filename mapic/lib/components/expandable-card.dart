@@ -64,6 +64,7 @@ class _ExpandableCard extends State<ExpandableCard> {
   }
   _delete() async {
     await SnapShot.deleteSnapshot(widget.id);
+    await widget.reflesh();
     return;
   }
 
