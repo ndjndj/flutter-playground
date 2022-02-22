@@ -14,10 +14,10 @@ class _ListOfStacks extends State<ListOfStacks> {
   @override
   void initState() {
     super.initState();
-    _refresh();
+    refresh();
   }
 
-  void _refresh() async {
+  void refresh() async {
     final data = await SnapShot.getSnapshots();
     setState(() {
       addressList = data;
