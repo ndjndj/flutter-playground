@@ -59,7 +59,12 @@ class _ExpandableCard extends State<ExpandableCard> {
 
   }
 
-  _edit() {
+  _edit() async {
+    final e = await Navigator.of(context).push(
+      MaterialPageRoute(builder: (context) {
+        return Edit();
+      })
+    );
     return;
   }
   _delete() async {
