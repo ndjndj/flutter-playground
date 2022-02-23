@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:path/path.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:path_provider/path_provider.dart';
 import '../db/snapshot.dart';
@@ -46,7 +47,7 @@ class _ExpandableCard extends State<ExpandableCard> {
     print('appDocDir.path');
     print(appDocDir.path);
     setState(() {
-      _imagePath = appDocDir.path + '/' + widget.imageName;
+      _imagePath = join(appDocDir.path, widget.imageName);
     });
   }
 
