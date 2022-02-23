@@ -20,7 +20,7 @@ class _ExpandableCard extends State<ExpandableCard> {
   double _height = 110;
   Color _color = Colors.white;
   double _opacity = 0.2;
-  double _headOpacity = 0.2;
+  double _headOpacity = 0.0;
   bool isOpened = false;
   String _imagePath = '';
 
@@ -31,7 +31,7 @@ class _ExpandableCard extends State<ExpandableCard> {
     _height = 110;
     _color = Colors.white;
     _opacity = 0.2;
-    _headOpacity = 0.2;
+    _headOpacity = 0.0;
 
     _localPath();
 
