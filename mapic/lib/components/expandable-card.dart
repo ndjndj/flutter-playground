@@ -33,7 +33,7 @@ class _ExpandableCard extends State<ExpandableCard> {
     _opacity = 0.2;
     _headOpacity = 0.2;
 
-    _localPath();
+    //_localPath();
 
     print('initstate');
     print(widget.place);
