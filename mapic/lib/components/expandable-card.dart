@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:path/path.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:path_provider/path_provider.dart';
 import '../db/snapshot.dart';
@@ -47,7 +46,7 @@ class _ExpandableCard extends State<ExpandableCard> {
     print('appDocDir.path');
     print(appDocDir.path);
     setState(() {
-      _imagePath = join(appDocDir.path, widget.imageName);
+      _imagePath = appDocDir.path + '/' + widget.imageName;
     });
   }
 
@@ -56,7 +55,7 @@ class _ExpandableCard extends State<ExpandableCard> {
       isOpened ? isOpened = false : isOpened = true;
       isOpened ? _height = 500 : _height = 110;
       isOpened ? _opacity = 1.0 : _opacity = 0.2;
-      isOpened ? _headOpacity = 1.0 : _headOpacity = 0.2;
+      isOpened ? _headOpacity = 1.0 : _headOpacity = 0.0;
     });
 
   }
