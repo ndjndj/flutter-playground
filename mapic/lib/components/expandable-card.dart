@@ -177,7 +177,7 @@ class _ExpandableCard extends State<ExpandableCard> {
               right: 60.0,
               top: 65.0,
               child: IconButton(
-                onPressed: () {},
+                onPressed: _edit,
                 icon: Icon(Icons.edit),
                 iconSize: 24,
               ),
