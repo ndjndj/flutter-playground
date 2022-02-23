@@ -11,7 +11,6 @@ class MapicList extends StatefulWidget {
 }
 
 class _MapicList extends State<MapicList> {
-  List _addressList = [];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
