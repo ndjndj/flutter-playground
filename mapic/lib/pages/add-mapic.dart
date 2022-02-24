@@ -128,23 +128,25 @@ class _AddMapic extends State<AddMapic> {
                       ),
                     ),
                 ),
-                Row(children: <Widget>[
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.teal,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.teal,
 
+                      ),
+                      onPressed: _addSnapshot,
+                      child: Text('save', style: TextStyle(color: Colors.white))
                     ),
-                    onPressed: _addSnapshot,
-                    child: Text('save', style: TextStyle(color: Colors.white))
-                  ),
-                  SizedBox(width: 20,),
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.teal
+                    SizedBox(width: 20,),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.teal
+                      ),
+                      onPressed: _addSnapshot,
+                      child: Text('save', style: TextStyle(color: Colors.white))
                     ),
-                    onPressed: _addSnapshot,
-                    child: Text('save', style: TextStyle(color: Colors.white))
-                  ),
               ]),
               TextField(
                 controller: _placeController,
