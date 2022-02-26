@@ -8,9 +8,10 @@ class ExpandableCard extends StatefulWidget {
   final int id;
   final String place;
   final String imageName;
+  final String? address;
   final Function reflesh;
 
-  ExpandableCard({required this.id, required this.place, required this.imageName, required this.reflesh});
+  ExpandableCard({required this.id, required this.place, required this.imageName, this.address, required this.reflesh});
 
   @override
   _ExpandableCard createState() => _ExpandableCard();
