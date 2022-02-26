@@ -161,7 +161,7 @@ class _ExpandableCard extends State<ExpandableCard> {
               right: 10.0,
               bottom: 0.0,
               child: Text(
-                widget.place,
+                widget.address!,
                 style: GoogleFonts.rocknRollOne(
                   textStyle: TextStyle(
                     fontSize: 18.0,
