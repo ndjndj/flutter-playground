@@ -9,6 +9,18 @@ class CheckDialog extends StatefulWidget {
 class _CheckDialog extends State<CheckDialog>{
 
   Widget build(BuildContext context) {
-    return ;
+    return AlertDialog(
+      title: const Text('dialog'),
+      actions: <Widget>[
+        TextButton(
+          onPressed: () {},
+          child: const Text('cancel'),
+        ),
+        TextButton(
+          onPressed: () {},
+          child: const Text('ok'),
+        ),
+      ],
+    );
   }
 }
