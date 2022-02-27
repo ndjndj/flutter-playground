@@ -11,6 +11,7 @@ class _CheckDialog extends State<CheckDialog>{
   Widget build(BuildContext context) {
     return AlertDialog(
       title: const Text('dialog'),
+      content: const Text('desc'),
       actions: <Widget>[
         TextButton(
           onPressed: () {},
