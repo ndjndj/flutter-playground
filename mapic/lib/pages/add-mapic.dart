@@ -137,7 +137,7 @@ class _AddMapic extends State<AddMapic> {
 
                       ),
                       onPressed: _addSnapshot,
-                      child: Text('save', style: TextStyle(color: Colors.white))
+                      child: Text('gallery', style: TextStyle(color: Colors.white))
                     ),
                     SizedBox(width: 20,),
                     ElevatedButton(
@@ -145,7 +145,7 @@ class _AddMapic extends State<AddMapic> {
                         primary: Colors.teal
                       ),
                       onPressed: _addSnapshot,
-                      child: Text('save', style: TextStyle(color: Colors.white))
+                      child: Text('camera', style: TextStyle(color: Colors.white))
                     ),
               ]),
               TextField(
