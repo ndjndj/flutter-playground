@@ -136,7 +136,7 @@ class _AddMapic extends State<AddMapic> {
                         primary: Colors.teal,
 
                       ),
-                      onPressed: _addSnapshot,
+                      onPressed: getImageFromGallery,
                       child: Text('gallery', style: TextStyle(color: Colors.white))
                     ),
                     SizedBox(width: 20,),
@@ -144,7 +144,7 @@ class _AddMapic extends State<AddMapic> {
                       style: ElevatedButton.styleFrom(
                         primary: Colors.teal
                       ),
-                      onPressed: _addSnapshot,
+                      onPressed: getImage,
                       child: Text('camera', style: TextStyle(color: Colors.white))
                     ),
               ]),
